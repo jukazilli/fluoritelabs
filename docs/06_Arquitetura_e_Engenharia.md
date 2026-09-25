@@ -1,7 +1,7 @@
 # Fluorite Labs — Arquitetura e Engenharia
 
 > **Documento:** 06  
-> **Status:** EM REVISÃO — não canonizado  
+> **Status:** APROVADO — documento canônico  
 > **Última atualização:** 2026-09-25  
 > **Documentos anteriores:** `01_Briefing_e_Escopo.md`, `02_Visao_de_Produto_PO.md`, `03_Direcao_de_Marca_UI_e_Design_System.md`, `04_Experiencia_UX_e_Arquitetura_de_Informacao.md`, `05_SEO_Performance_e_Otimizacao.md`
 
@@ -1893,28 +1893,29 @@ Essas escolhas deverão respeitar os requisitos deste documento.
 
 ---
 
-# 68. Critérios de aprovação
+# 68. Aprovação da Arquitetura e Engenharia
 
-Este documento estará aprovado quando o responsável pelo produto confirmar:
+O responsável pelo produto aprovou este documento em 2026-09-25.
 
-- filosofia arquitetural;
-- estrutura de sistema;
-- módulos;
-- admin;
-- modelo de leads;
-- Journal;
-- editor visual;
-- Work;
-- dados;
-- segurança;
-- ambientes;
-- deploy;
-- backup;
-- observabilidade;
-- testes;
-- decisões rejeitadas;
-- necessidades para Tech Lead e Infraestrutura.
+Ficam canonizados neste documento:
 
-Após aprovação, o próximo documento será:
+- a filosofia de arquitetura simples e modular;
+- o uso de um único repositório na V1;
+- a separação entre UI, aplicação e dados/integrações;
+- o admin autenticado;
+- o modelo de leads e Journal;
+- o editor visual estruturado em blocos;
+- Work mantido em código na V1;
+- as regras de segurança, validação e proteção anti-abuso;
+- ambientes Local, Preview/Staging e Produção;
+- deploy com validações e preview;
+- backup e restore;
+- observabilidade e logging sem PII desnecessária;
+- testes unitários, integração e E2E;
+- conteúdo público indexável sem dependência crítica de client-side JS;
+- a rejeição de microservices, realtime, filas e cache distribuído sem necessidade real;
+- os requisitos que orientarão Tech Lead e Infraestrutura.
+
+O próximo documento será:
 
 `07_Infraestrutura_Deploy_e_Observabilidade.md`
