@@ -14,7 +14,7 @@ async function runSmokeTest() {
     CLERK_PUBLISHABLE_KEY:
       process.env.VITE_CLERK_PUBLISHABLE_KEY ||
       process.env.CLERK_PUBLISHABLE_KEY ||
-      "pk_test_placeholder_smoke_test_key",
+      "pk_test_bWlnaHR5LW1vbGUtNTQuY2xlcmsuYWNjb3VudHMuZGV2JA",
     DATABASE_URL: process.env.DATABASE_URL || "",
   };
   const ctx = {

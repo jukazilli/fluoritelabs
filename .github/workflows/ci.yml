@@ -20,6 +20,7 @@ jobs:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       CLERK_SECRET_KEY: ${{ secrets.CLERK_SECRET_KEY }}
       ADMIN_CLERK_USER_ID: ${{ secrets.ADMIN_CLERK_USER_ID }}
+      VITE_CLERK_PUBLISHABLE_KEY: ${{ secrets.VITE_CLERK_PUBLISHABLE_KEY || 'pk_test_bWlnaHR5LW1vbGUtNTQuY2xlcmsuYWNjb3VudHMuZGV2JA' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
