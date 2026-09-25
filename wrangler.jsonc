@@ -4,15 +4,15 @@
   "compatibility_date": "2026-09-25",
   "main": "./workers/app.ts",
   "assets": {
-    "directory": "./build/client"
+    "directory": "./build/client",
   },
   "observability": {
-    "enabled": true
+    "enabled": true,
   },
   "r2_buckets": [
     {
       "binding": "MEDIA_BUCKET",
-      "bucket_name": "fluoritelabs-media"
-    }
-  ]
+      "bucket_name": "fluoritelabs-media",
+    },
+  ],
 }

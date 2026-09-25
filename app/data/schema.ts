@@ -1,12 +1,4 @@
-import {
-  pgTable,
-  text,
-  varchar,
-  timestamp,
-  jsonb,
-  integer,
-  index,
-} from "drizzle-orm/pg-core";
+import { pgTable, text, varchar, timestamp, jsonb, integer, index } from "drizzle-orm/pg-core";
 
 // ============================================================================
 // 1. Leads / Microbriefing Schema (docs/01, docs/02, docs/04, docs/06)
@@ -23,12 +15,8 @@ export const leads = pgTable(
     whatsappHandoffAt: timestamp("whatsapp_handoff_at", {
       withTimezone: true,
     }),
-    createdAt: timestamp("created_at", { withTimezone: true })
-      .notNull()
-      .defaultNow(),
-    updatedAt: timestamp("updated_at", { withTimezone: true })
-      .notNull()
-      .defaultNow(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (table) => [
     index("leads_status_idx").on(table.status),
@@ -55,12 +43,8 @@ export const articles = pgTable(
     status: varchar("status", { length: 50 }).notNull().default("DRAFT"),
     readingTimeMinutes: integer("reading_time_minutes").default(1),
     publishedAt: timestamp("published_at", { withTimezone: true }),
-    createdAt: timestamp("created_at", { withTimezone: true })
-      .notNull()
-      .defaultNow(),
-    updatedAt: timestamp("updated_at", { withTimezone: true })
-      .notNull()
-      .defaultNow(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (table) => [
     index("articles_slug_idx").on(table.slug),
@@ -80,9 +64,7 @@ export const categories = pgTable("categories", {
   id: text("id").primaryKey(),
   name: varchar("name", { length: 100 }).notNull(),
   slug: varchar("slug", { length: 100 }).notNull().unique(),
-  createdAt: timestamp("created_at", { withTimezone: true })
-    .notNull()
-    .defaultNow(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
 
 export type Category = typeof categories.$inferSelect;

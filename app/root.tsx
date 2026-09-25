@@ -1,6 +1,14 @@
 import { ClerkProvider } from "@clerk/react-router";
-import {clerkMiddleware, rootAuthLoader} from "@clerk/react-router/server";
-import {isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration, useLoaderData} from "react-router";
+import { clerkMiddleware, rootAuthLoader } from "@clerk/react-router/server";
+import {
+  isRouteErrorResponse,
+  Links,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+  useLoaderData,
+} from "react-router";
 
 import type { Route } from "./+types/root";
 import "./styles/app.css";
@@ -38,9 +46,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   const loaderData = useLoaderData<typeof loader>();
-  return <ClerkProvider loaderData={loaderData}>
-        <Outlet />
-      </ClerkProvider>;
+  return (
+    <ClerkProvider loaderData={loaderData}>
+      <Outlet />
+    </ClerkProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
@@ -51,9 +61,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   if (isRouteErrorResponse(error)) {
     message = error.status === 404 ? "404" : "Error";
     details =
-      error.status === 404
-        ? "The requested page could not be found."
-        : error.statusText || details;
+      error.status === 404 ? "The requested page could not be found." : error.statusText || details;
   } else if (import.meta.env.DEV && error && error instanceof Error) {
     details = error.message;
     stack = error.stack;

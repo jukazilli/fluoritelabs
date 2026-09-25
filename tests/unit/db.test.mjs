@@ -64,7 +64,9 @@ console.log("Running Drizzle Database & Schema unit tests...\n");
     const leadsResult = await db.select().from(schema.leads);
     assert.ok(Array.isArray(leadsResult), "Leads query result should be an array");
 
-    console.log(`   ✓ Successfully queried Neon database! Found ${result.length} categories and ${leadsResult.length} leads.`);
+    console.log(
+      `   ✓ Successfully queried Neon database! Found ${result.length} categories and ${leadsResult.length} leads.`,
+    );
   } else {
     console.log("   ⚠ DATABASE_URL not set in environment, skipping live query.");
   }

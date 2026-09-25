@@ -13,9 +13,7 @@ let cachedUrl: string | null = null;
  */
 export function getDb(databaseUrl: string): Database {
   if (!databaseUrl) {
-    throw new Error(
-      "Database connection error: DATABASE_URL is not configured or empty.",
-    );
+    throw new Error("Database connection error: DATABASE_URL is not configured or empty.");
   }
 
   if (cachedDb && cachedUrl === databaseUrl) {

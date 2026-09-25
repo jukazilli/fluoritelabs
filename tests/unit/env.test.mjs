@@ -1,11 +1,6 @@
 import assert from "node:assert/strict";
 import { clientEnvSchema } from "../../app/config/env.client.ts";
-import {
-  serverEnvSchema,
-  strictProductionEnvSchema,
-  validateServerEnv,
-  EnvValidationError,
-} from "../../app/config/env.server.ts";
+import { validateServerEnv, EnvValidationError } from "../../app/config/env.server.ts";
 
 console.log("Running Environment & Secrets Schema unit tests...\n");
 
@@ -47,7 +42,8 @@ console.log("Running Environment & Secrets Schema unit tests...\n");
 
   const customDev = validateServerEnv({
     NODE_ENV: "development",
-    DATABASE_URL: "postgresql://user:pass@ep-cool-123.sa-east-1.aws.neon.tech/fluorite?sslmode=require",
+    DATABASE_URL:
+      "postgresql://user:pass@ep-cool-123.sa-east-1.aws.neon.tech/fluorite?sslmode=require",
     CLERK_SECRET_KEY: "sk_test_mock",
     ADMIN_CLERK_USER_ID: "user_2mock",
   });

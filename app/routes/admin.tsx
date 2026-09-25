@@ -16,16 +16,12 @@ export default function AdminDashboard() {
     <div className="min-h-screen bg-[#030304] text-[#f5f5f7]">
       <header className="border-b border-[#0e0e13] px-8 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <span className="text-xs uppercase tracking-[0.3em] text-[#9494a8]">
-            Fluorite Labs
-          </span>
+          <span className="text-xs uppercase tracking-[0.3em] text-[#9494a8]">Fluorite Labs</span>
           <span className="text-[#5e5e72]">/</span>
           <span className="text-xs font-mono text-[#8a63f2]">Painel Admin</span>
         </div>
         <div className="flex items-center space-x-4">
-          <span className="text-xs text-[#5e5e72] font-mono">
-            {adminUserId}
-          </span>
+          <span className="text-xs text-[#5e5e72] font-mono">{adminUserId}</span>
           <UserButton />
         </div>
       </header>

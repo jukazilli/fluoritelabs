@@ -146,20 +146,14 @@ export async function uploadMedia(
 /**
  * Retrieves a stored object from Cloudflare R2.
  */
-export async function getMedia(
-  bucket: R2Bucket,
-  key: string,
-): Promise<R2ObjectBody | null> {
+export async function getMedia(bucket: R2Bucket, key: string): Promise<R2ObjectBody | null> {
   return bucket.get(key);
 }
 
 /**
  * Controlled deletion of a stored object from Cloudflare R2.
  */
-export async function deleteMedia(
-  bucket: R2Bucket,
-  key: string,
-): Promise<void> {
+export async function deleteMedia(bucket: R2Bucket, key: string): Promise<void> {
   await bucket.delete(key);
 }
 
@@ -171,7 +165,7 @@ export function createMockR2Bucket(): R2Bucket {
     string,
     {
       data: Uint8Array;
-      httpMetadata?: any;
+      httpMetadata?: R2HTTPMetadata | Headers;
       customMetadata?: Record<string, string>;
       size: number;
       etag: string;
@@ -181,7 +175,7 @@ export function createMockR2Bucket(): R2Bucket {
   return {
     async put(
       key: string,
-      value: any,
+      value: Uint8Array | ArrayBuffer | string | unknown,
       options?: R2PutOptions,
     ): Promise<R2Object> {
       let bytes: Uint8Array;

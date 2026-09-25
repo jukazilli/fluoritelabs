@@ -22,9 +22,7 @@ export function getClientEnv(): ClientEnv {
     const issues = result.error.issues
       .map((issue) => ` - ${issue.path.join(".")}: ${issue.message}`)
       .join("\n");
-    throw new Error(
-      `Invalid client environment configuration:\n${issues}`,
-    );
+    throw new Error(`Invalid client environment configuration:\n${issues}`);
   }
 
   return result.data;

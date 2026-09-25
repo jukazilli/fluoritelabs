@@ -22,7 +22,7 @@ export function isAuthorizedAdmin(
 
 /**
  * Server-side authorization guard protecting administrative routes and mutations.
- * 
+ *
  * Rules:
  * 1. Unauthenticated users are redirected to /sign-in.
  * 2. Authenticated users who are NOT the designated administrator receive 403 Forbidden.

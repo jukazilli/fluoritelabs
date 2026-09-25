@@ -1,8 +1,4 @@
-import {
-  createRequestHandler,
-  createContext,
-  RouterContextProvider,
-} from "react-router";
+import { createRequestHandler, createContext, RouterContextProvider } from "react-router";
 
 export interface CloudflareContext {
   env: Env;

@@ -10,8 +10,7 @@ async function runSmokeTest() {
 
   const request = new Request("http://localhost:8787/");
   const env = {
-    CLERK_SECRET_KEY:
-      process.env.CLERK_SECRET_KEY || "sk_test_placeholder_smoke_test_key_12345",
+    CLERK_SECRET_KEY: process.env.CLERK_SECRET_KEY || "sk_test_placeholder_smoke_test_key_12345",
     CLERK_PUBLISHABLE_KEY:
       process.env.VITE_CLERK_PUBLISHABLE_KEY ||
       process.env.CLERK_PUBLISHABLE_KEY ||
@@ -33,10 +32,7 @@ async function runSmokeTest() {
   );
 
   const html = await response.text();
-  assert.ok(
-    html.includes("Fluorite Labs"),
-    "HTML must include 'Fluorite Labs'",
-  );
+  assert.ok(html.includes("Fluorite Labs"), "HTML must include 'Fluorite Labs'");
   assert.ok(
     html.includes("Fundação Técnica Inicializada"),
     "HTML must include 'Fundação Técnica Inicializada'",
