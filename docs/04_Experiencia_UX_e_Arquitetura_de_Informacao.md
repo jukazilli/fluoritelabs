@@ -2,7 +2,7 @@
 
 > **Documento:** 04  
 > **Status:** APROVADO — documento canônico  
-> **Última atualização:** 2026-09-24  
+> **Última atualização:** 2026-09-25  
 > **Documentos anteriores:** `01_Briefing_e_Escopo.md`, `02_Visao_de_Produto_PO.md`, `03_Direcao_de_Marca_UI_e_Design_System.md`
 
 ---
@@ -34,6 +34,51 @@ Ele consolida:
 A pergunta central é:
 
 > **Como permitir que o visitante avance da descoberta até o contato com o mínimo de atrito, sem que a interface precise explicar a si mesma?**
+
+---
+
+
+# 1.1. Fidelidade UX à referência visual
+
+A experiência pública descrita neste documento deve ser implementada dentro da referência visual canônica definida no Documento 03.
+
+A arquitetura de informação pode mudar conteúdos, labels e destinos aprovados, mas não pode transformar a experiência em outra linguagem de interface.
+
+## Regra
+
+A UX deve ser resolvida **dentro da composição da Fluorite Labs**, e não adicionando padrões visuais genéricos para tornar cada função mais óbvia.
+
+Exemplos:
+
+- Serviços podem ser navegáveis sem virar uma grade de cards padrão;
+- Processo pode ser compreensível sem ícones clichês;
+- Work pode ser explorável sem thumbnails com aparência de marketplace;
+- microbriefing deve parecer parte da experiência, não um widget externo;
+- navegação mobile deve preservar o mesmo caráter editorial e cinematográfico.
+
+## Conflito entre referência e conteúdo aprovado
+
+Elementos literais da imagem de referência, como textos em inglês ou itens antigos de navegação, não substituem as decisões de arquitetura já aprovadas.
+
+Preservar:
+
+- hierarquia;
+- escala;
+- ritmo;
+- posição relativa;
+- contraste;
+- atmosfera;
+- relação texto/imagem;
+- densidade.
+
+Adaptar:
+
+- copy;
+- labels;
+- destinos;
+- estados;
+- acessibilidade;
+- comportamento responsivo.
 
 ---
 
