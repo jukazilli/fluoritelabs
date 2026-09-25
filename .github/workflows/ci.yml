@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   validate:
-    name: Format, Lint, Typecheck, Test & Build
+    name: Format, Lint, Typecheck, Test, Build & Smoke
     runs-on: ubuntu-latest
     env:
       NODE_ENV: test
@@ -59,8 +59,11 @@ jobs:
       - name: Run Typecheck
         run: pnpm typecheck
 
-      - name: Run Unit & Smoke Tests
+      - name: Run Unit & Integration Tests
         run: pnpm test
 
       - name: Run Production Build
         run: pnpm build
+
+      - name: Run Worker Runtime Smoke Test
+        run: pnpm test:smoke
