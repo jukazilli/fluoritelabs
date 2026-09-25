@@ -2,7 +2,7 @@
 
 > Status: processo inicial aprovado para condução do projeto  
 > Formato canônico: Markdown  
-> Repositório: `jukazilli/fluritelabs`
+> Repositório: `jukazilli/fluoritelabs`
 
 ## 1. Objetivo
 
