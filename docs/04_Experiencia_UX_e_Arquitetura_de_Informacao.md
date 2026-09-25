@@ -1,7 +1,7 @@
 # Fluorite Labs — Experiência UX e Arquitetura de Informação
 
 > **Documento:** 04  
-> **Status:** EM REVISÃO — não canonizado  
+> **Status:** APROVADO — documento canônico  
 > **Última atualização:** 2026-09-24  
 > **Documentos anteriores:** `01_Briefing_e_Escopo.md`, `02_Visao_de_Produto_PO.md`, `03_Direcao_de_Marca_UI_e_Design_System.md`
 
@@ -1303,26 +1303,32 @@ Não são decisões deste documento:
 
 ---
 
-# 44. Critérios de aprovação
+# 44. Aprovação da Experiência UX e Arquitetura de Informação
 
-Este documento estará aprovado quando o responsável pelo produto confirmar:
+O responsável pelo produto aprovou este documento em 2026-09-24.
 
-- sitemap;
-- navegação;
-- Home;
-- serviços;
-- Work;
-- processo;
-- microbriefing;
-- captura de leads;
-- admin mínimo;
-- Journal;
-- footer;
-- páginas legais;
-- erros;
-- mobile;
-- continuidade de navegação.
+Ficam canonizados neste documento:
 
-Após aprovação, o próximo documento será:
+- sitemap da V1;
+- navegação principal curta;
+- Home como experiência central;
+- páginas individuais de serviço;
+- arquitetura de Work e navegação contínua entre projetos;
+- processo comercial em linguagem simples;
+- microbriefing em três etapas;
+- persistência das respostas durante a sessão;
+- registro interno do lead antes da tentativa de abrir o WhatsApp;
+- backoffice mínimo para leads, Journal e categorias;
+- status simples de lead: Novo, Contatado, Convertido e Arquivado;
+- estrutura inicial do FLUOR JOURNAL;
+- ausência de busca e filtros avançados na V1;
+- uso de Joinville e Curitiba apenas como estratégia orgânica, não como posicionamento visível da marca;
+- ausência de página Sobre na V1;
+- páginas legais no footer;
+- tratamento inline de erros;
+- menu mobile amplo e editorial;
+- continuidade visual entre páginas.
+
+O próximo documento será:
 
 `05_SEO_Performance_e_Otimizacao.md`
