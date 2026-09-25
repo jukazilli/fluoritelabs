@@ -1,7 +1,7 @@
 # Fluorite Labs — Visão do Tech Lead e Stack
 
 > **Documento:** 08  
-> **Status:** EM REVISÃO — não canonizado  
+> **Status:** APROVADO — documento canônico  
 > **Última atualização:** 2026-09-25  
 > **Documentos anteriores:** `01_Briefing_e_Escopo.md`, `02_Visao_de_Produto_PO.md`, `03_Direcao_de_Marca_UI_e_Design_System.md`, `04_Experiencia_UX_e_Arquitetura_de_Informacao.md`, `05_SEO_Performance_e_Otimizacao.md`, `06_Arquitetura_e_Engenharia.md`, `07_Infraestrutura_Deploy_e_Observabilidade.md`
 
@@ -1451,27 +1451,42 @@ Na Fundação, versões exatas devem ser revalidadas antes da instalação.
 
 ---
 
-# 69. Critérios de aprovação
+# 69. Aprovação da Visão do Tech Lead e Stack
 
-Este documento estará aprovado quando o responsável pelo produto confirmar:
+O responsável pelo produto aprovou este documento em 2026-09-25.
 
-- stack;
-- React Router;
-- Cloudflare;
-- Clerk;
-- Neon;
-- Drizzle;
+Ficam canonizados neste documento:
+
+- TypeScript strict;
+- React;
+- React Router v8 em Framework Mode;
+- SSR como capacidade central;
+- Vite;
+- Cloudflare Workers;
+- Clerk para autenticação administrativa;
+- autorização administrativa própria além do Clerk;
+- Neon PostgreSQL em São Paulo;
+- Drizzle ORM;
 - Zod;
-- BlockNote;
-- Ariakit;
-- Tailwind;
-- Motion;
-- testes;
-- tooling;
-- políticas de dependência;
-- decisões rejeitadas;
-- e, principalmente, a regra de fidelidade visual.
+- BlockNote com experiência editorial próxima do Notion;
+- Ariakit como base headless do editor;
+- Tailwind CSS 4;
+- CSS Custom Properties para tokens;
+- UI pública custom;
+- Motion apenas quando necessário;
+- ausência de smooth-scroll library por padrão;
+- ausência de Three.js na Hero da V1;
+- ausência de state manager global na Fundação;
+- Cloudflare R2 como storage preferencial;
+- Vitest;
+- Playwright;
+- pnpm;
+- GitHub/GitHub Actions;
+- GA4 + Search Console;
+- fidelidade à imagem de referência como restrição superior de UI;
+- comparação visual como gate de qualidade;
+- agentes de IA sem liberdade para reinterpretar a direção visual sem aprovação.
 
-Após aprovação, o próximo documento será:
+O próximo documento será:
 
 `09_Backlog_e_Plano_de_Entrega.md`
