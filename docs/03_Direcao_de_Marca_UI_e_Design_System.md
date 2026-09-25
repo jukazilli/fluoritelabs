@@ -2,7 +2,7 @@
 
 > **Documento:** 03  
 > **Status:** APROVADO — documento canônico  
-> **Última atualização:** 2026-09-24  
+> **Última atualização:** 2026-09-25  
 > **Documentos anteriores:** `01_Briefing_e_Escopo.md`, `02_Visao_de_Produto_PO.md`  
 > **Base visual:** direção de design previamente aprovada para a Fluorite Labs
 
@@ -37,6 +37,95 @@ Ele define:
 A pergunta central é:
 
 > **Como preservar a identidade premium da Fluorite Labs em todas as telas sem transformar a estética em excesso, ruído ou inconsistência?**
+
+---
+
+
+# 1.1. Referência visual canônica — regra de fidelidade
+
+A imagem de direção visual aprovada novamente pelo responsável do produto em 2026-09-25 é a **referência visual canônica da experiência pública da Fluorite Labs**.
+
+A implementação não possui liberdade para reinterpretar a marca em outra linguagem visual.
+
+Quando houver dúvida sobre aparência, composição ou atmosfera, a prioridade é:
+
+```text
+imagem de referência aprovada
+        ↓
+Documento 03
+        ↓
+decisão local de implementação
+```
+
+## O que deve permanecer fiel
+
+A fidelidade inclui, principalmente:
+
+- experiência full-bleed predominantemente escura;
+- fundo preto/obsidian com profundidade e ausência de aparência chapada;
+- grande espaço negativo;
+- wordmark discreto no canto superior esquerdo;
+- navegação horizontal leve e pouco dominante;
+- CTA pill de alto contraste;
+- headline grande, editorial e posicionada no lado esquerdo;
+- baixa densidade de copy;
+- fluorita monumental como protagonista do lado central/direito;
+- recorte assimétrico entre texto e objeto;
+- iluminação cinematográfica;
+- refrações violeta, cyan, teal e branco;
+- shards/fragmentos usados como detalhe raro;
+- microtipografia, linhas finas e labels discretos;
+- informações secundárias com contraste reduzido;
+- seção inferior integrada à mesma composição, sem ruptura visual;
+- sensação premium, tecnológica, silenciosa e precisa.
+
+## O que não pode acontecer durante implementação
+
+Não converter essa direção em:
+
+- layout SaaS genérico;
+- dashboard visual;
+- coleção de cards arredondados;
+- blocos brancos alternados na Home;
+- gradientes genéricos de startup;
+- neon excessivo;
+- glassmorphism dominante;
+- ícones decorativos de frameworks;
+- grids densos;
+- excesso de badges;
+- seções com aparência de template;
+- estética “AI website” reconhecível;
+- componentes de biblioteca preservando aparência padrão;
+- simplificação que elimine a composição cinematográfica.
+
+## Conteúdo versus aparência
+
+A imagem é canônica para **composição, proporção, hierarquia, atmosfera, densidade e direção artística**.
+
+Ela não obriga copiar literalmente os textos presentes na referência.
+
+Decisões canônicas posteriores continuam valendo para:
+
+- idioma em português;
+- menu `Work / Serviços / Processo / Journal / Começar agora`;
+- ausência de `Sobre` e `Contato` no menu principal;
+- copy final;
+- conteúdo das seções;
+- acessibilidade;
+- performance;
+- SEO.
+
+Portanto:
+
+> **alteramos o conteúdo necessário sem alterar a linguagem visual que torna a referência reconhecível.**
+
+## Critério de aceite visual
+
+Uma implementação pública não pode ser considerada concluída apenas porque possui os mesmos elementos.
+
+Ela deve passar por comparação visual lado a lado com a referência aprovada.
+
+Se a página parecer pertencer a outra marca, outro template ou outra direção artística, a implementação falhou mesmo que funcionalmente esteja correta.
 
 ---
 
