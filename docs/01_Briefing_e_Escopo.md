@@ -45,15 +45,19 @@ A Fluorite Labs começa especializada em presença digital para empresas e evolu
 
 A Fluorite Labs deve ser percebida como um estúdio digital capaz de transformar a credibilidade e a especialização de uma empresa em uma presença digital profissional que gere novas oportunidades de negócio.
 
-### 3.2. Promessa central sugerida
+### 3.2. Promessa estratégica sugerida
 
 > **Sites que transformam credibilidade em novos negócios.**
 
-Esta formulação é a direção inicial de mensagem e ainda poderá ser refinada na etapa de Visão de Produto e posteriormente em copywriting.
+Esta frase registra a **promessa estratégica da marca**, mas não deve ser interpretada automaticamente como a headline final da Hero.
 
-### 3.3. Mensagem complementar sugerida
+A copy visível no site deverá respeitar a direção visual aprovada. Na Hero, especialmente, a linguagem poderá ser mais curta, editorial, conceitual e cinematográfica, desde que a proposta de valor continue compreensível no conjunto headline + texto de apoio + CTA.
+
+### 3.3. Mensagem comercial de apoio sugerida
 
 > Criamos sites rápidos, estratégicos e preparados para serem encontrados no Google para empresas que precisam transmitir confiança antes mesmo do primeiro contato comercial.
+
+Esta frase também é uma referência de mensagem, não um bloco obrigatório de copy. A versão final deverá ser refinada em conjunto com UX, UI, SEO e copywriting para preservar ritmo visual, hierarquia e clareza.
 
 ### 3.4. Diferenciação pretendida
 
@@ -595,6 +599,113 @@ Elementos centrais:
 - vídeo ou movimento de fundo refinado na Hero.
 
 O documento específico de UI irá canonizar todos os tokens, componentes e regras.
+
+### 18.1. Copywriting como parte do design
+
+A copy da Fluorite Labs deve ser tratada como parte do sistema visual e não como conteúdo inserido depois que o layout estiver pronto.
+
+A experiência aprovada depende de:
+
+- espaço negativo;
+- ritmo editorial;
+- hierarquia tipográfica forte;
+- poucas mensagens simultâneas;
+- foco visual;
+- sensação premium;
+- linguagem precisa.
+
+Por isso, a densidade de texto deve ser controlada.
+
+#### Princípio central
+
+> **O texto deve ocupar apenas o espaço necessário para comunicar a ideia sem competir com a direção visual.**
+
+Copy e layout devem ser projetados em conjunto.
+
+Uma frase comercialmente correta que destrua ritmo, respiro, composição ou hierarquia visual não será considerada uma boa solução para a Fluorite Labs.
+
+#### Hero
+
+A Hero deve priorizar impacto, identidade e compreensão imediata.
+
+Como direção inicial:
+
+- headline curta;
+- poucas linhas;
+- texto de apoio compacto;
+- um CTA principal claramente identificável;
+- microcopy apenas quando agregar atmosfera ou orientação;
+- nenhuma parede de texto;
+- nenhuma enumeração extensa de benefícios;
+- nenhuma tentativa de colocar todas as palavras-chave de SEO na primeira dobra.
+
+Os limites exatos de caracteres e linhas serão definidos durante UI e responsividade, considerando desktop e mobile.
+
+#### Linguagem
+
+A copy deverá ser:
+
+- precisa;
+- confiante;
+- sofisticada;
+- direta;
+- humana;
+- editorial;
+- contemporânea;
+- curta quando a composição exigir.
+
+Evitar:
+
+- clichês de agência;
+- excesso de adjetivos;
+- linguagem corporativa genérica;
+- frases como “soluções inovadoras e personalizadas” sem significado concreto;
+- tom exageradamente vendedor;
+- textos longos apenas para preencher espaço;
+- repetição artificial de palavras-chave;
+- jargões técnicos que não ajudam o comprador.
+
+#### Camadas de comunicação
+
+A comunicação deverá trabalhar em três níveis complementares:
+
+**1. Marca / impacto**
+
+Usada principalmente em Hero, aberturas de seção e transições.
+
+Pode ser mais conceitual, curta e emocional.
+
+**2. Clareza comercial**
+
+Usada em serviços, cases, processo, prova, CTAs e conversão.
+
+Explica objetivamente o que fazemos, para quem e qual valor entregamos.
+
+**3. Profundidade semântica / SEO**
+
+Usada nas páginas de serviço, cases, páginas locais quando justificadas e FLUOR JOURNAL.
+
+Permite aprofundar contexto, intenção de busca e conteúdo indexável sem sobrecarregar visualmente as áreas de maior impacto da marca.
+
+#### Regra de SEO
+
+SEO não autoriza degradar o design.
+
+Palavras-chave, estrutura semântica, headings, conteúdo contextual, links internos, metadados, dados estruturados e conteúdo editorial deverão trabalhar juntos para gerar relevância orgânica.
+
+A Hero não precisa carregar sozinha toda a estratégia de busca.
+
+#### Relação entre copy e direção visual
+
+Sempre que houver conflito entre um texto e a composição aprovada, a solução deve buscar:
+
+1. preservar a mensagem essencial;
+2. reduzir ou reestruturar a copy;
+3. mover aprofundamento para outra seção quando necessário;
+4. preservar a hierarquia e o espaço negativo;
+5. manter SEO através da arquitetura completa da página, e não por concentração artificial de texto.
+
+Essa regra deverá ser aprofundada e transformada em critérios objetivos nos documentos de Produto, UX, UI e SEO.
 
 ---
 
