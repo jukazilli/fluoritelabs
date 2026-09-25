@@ -1,7 +1,7 @@
 # Fluorite Labs — Direção de Marca, UI e Design System
 
 > **Documento:** 03  
-> **Status:** EM REVISÃO — não canonizado  
+> **Status:** APROVADO — documento canônico  
 > **Última atualização:** 2026-09-24  
 > **Documentos anteriores:** `01_Briefing_e_Escopo.md`, `02_Visao_de_Produto_PO.md`  
 > **Base visual:** direção de design previamente aprovada para a Fluorite Labs
@@ -1440,29 +1440,29 @@ Esses pontos não alteram a direção geral deste documento.
 
 ---
 
-# 40. Critérios de aprovação
+# 40. Aprovação da Direção de Marca, UI e Design System
 
-Este documento estará aprovado quando o responsável pelo produto confirmar que ele representa corretamente:
+O responsável pelo produto aprovou este documento em 2026-09-24.
 
-- a linguagem visual da marca;
-- a relação entre dark e editorial light;
-- tipografia;
-- cor;
-- espaço;
-- densidade;
-- componentes;
-- Work;
-- Journal;
-- microbriefing;
-- motion;
-- responsividade;
-- acessibilidade;
-- raridade visual;
-- performance;
-- logo;
-- comportamento entre páginas.
+Ficam canonizados neste documento:
 
-Após aprovação, o próximo documento será:
+- a linguagem visual da Fluorite Labs;
+- o uso de dark mode na experiência institucional principal;
+- o uso de editorial light em páginas de leitura e profundidade;
+- General Sans + Inter como base tipográfica;
+- o sistema de cores e acentos fluorita;
+- a regra de raridade visual;
+- a fluorita 3D como principal ativo visual;
+- o wordmark FLUORITE LABS como logo da V1;
+- motion sutil e cinematográfico;
+- redução de motion e fallback estático no mobile;
+- regras de densidade de copy;
+- comportamento de Work, Journal, microbriefing e footer;
+- acessibilidade visual;
+- transições contínuas entre páginas;
+- performance como limite da direção artística.
+
+O próximo documento será:
 
 `04_Experiencia_UX_e_Arquitetura_de_Informacao.md`
 
