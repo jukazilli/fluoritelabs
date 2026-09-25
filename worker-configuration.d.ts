@@ -2,6 +2,7 @@
 interface Env {
   // Cloudflare environment bindings
   ASSETS?: Fetcher;
+  MEDIA_BUCKET?: R2Bucket;
 
   // Environment variables and secrets
   NODE_ENV?: "development" | "production" | "test";
