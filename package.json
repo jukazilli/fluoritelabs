@@ -6,9 +6,10 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "preview": "wrangler dev",
-    "test": "pnpm test:unit && pnpm test:db && pnpm test:smoke",
+    "test": "pnpm test:unit && pnpm test:db && pnpm test:auth && pnpm test:smoke",
     "test:unit": "node --experimental-strip-types tests/unit/env.test.mjs",
     "test:db": "node --experimental-strip-types tests/unit/db.test.mjs",
+    "test:auth": "node --experimental-strip-types tests/unit/auth.test.mjs",
     "test:smoke": "node tests/smoke/runtime.test.mjs",
     "typecheck": "react-router typegen && tsc",
     "cf-typegen": "wrangler types",
@@ -17,6 +18,7 @@
     "db:check": "drizzle-kit check"
   },
   "dependencies": {
+    "@clerk/react-router": "^3.6.27",
     "@neon/config": "^1.7.3",
     "@neon/env": "^1.4.4",
     "@neondatabase/serverless": "^1.1.0",
