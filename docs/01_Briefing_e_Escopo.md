@@ -321,7 +321,7 @@ O lançamento utilizará projetos conceituais produzidos especificamente para de
 
 Esses projetos não deverão ser apresentados como clientes reais.
 
-A nomenclatura visual preferencial para identificá-los será **Concepts**, ou variação curta equivalente aprovada posteriormente em UI/copywriting.
+A identificação deverá ser discreta e verdadeira. Como a interface será predominantemente em português, os projetos poderão receber o rótulo **Conceito** quando houver necessidade de distingui-los de trabalhos reais. A seção de portfólio poderá usar **Work** como uma das poucas exceções de linguagem em inglês aprovadas para a identidade.
 
 ### Estratégia inicial sugerida
 
@@ -475,12 +475,10 @@ Termos em inglês poderão ser usados como elementos de identidade, navegação 
 
 Exemplos já alinhados com a linguagem visual:
 
-- Selected Work;
-- Strategy;
-- Design;
-- Development;
-- Growth;
-- FLUOR JOURNAL.
+- Work;
+- FLUOR JOURNAL, por ser o nome próprio da área editorial.
+
+A regra geral é utilizar português na navegação, CTAs, serviços, processo, formulários e mensagens comerciais.
 
 ### Regra
 
@@ -783,7 +781,7 @@ As seguintes decisões permanecem abertas e não bloqueiam o encerramento deste 
 
 1. exibição pública do preço “a partir de R$ 1.000”;
 2. faixas de investimento do formulário;
-3. quantidade de Concepts no lançamento;
+3. quantidade de projetos conceituais no lançamento;
 4. quais serviços terão páginas próprias;
 5. arquitetura final das páginas;
 6. estratégia editorial detalhada;
@@ -810,7 +808,7 @@ Ficam canonizados neste documento:
 - os segmentos prioritários;
 - a oferta inicial;
 - o foco regional de SEO em Joinville e Curitiba sem limitar comercialmente a marca;
-- o uso de projetos conceituais identificados como **Concepts**;
+- o uso transparente de projetos conceituais, identificados de forma discreta como **Conceito** quando necessário;
 - o microbriefing com encaminhamento para WhatsApp;
 - o FLUOR JOURNAL;
 - a prioridade de colocar a operação, analytics e dados no ar antes de construir ferramentas próprias de CRM ou gestão;
