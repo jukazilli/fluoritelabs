@@ -1,7 +1,7 @@
 # Fluorite Labs — Infraestrutura, Deploy e Observabilidade
 
 > **Documento:** 07  
-> **Status:** EM REVISÃO — não canonizado  
+> **Status:** APROVADO — documento canônico  
 > **Última atualização:** 2026-09-25  
 > **Documentos anteriores:** `01_Briefing_e_Escopo.md`, `02_Visao_de_Produto_PO.md`, `03_Direcao_de_Marca_UI_e_Design_System.md`, `04_Experiencia_UX_e_Arquitetura_de_Informacao.md`, `05_SEO_Performance_e_Otimizacao.md`, `06_Arquitetura_e_Engenharia.md`
 
@@ -1264,29 +1264,32 @@ Antes da implementação funcional completa, a Fundação deverá produzir evid�
 
 ---
 
-# 54. Critérios de aprovação
+# 54. Aprovação da Infraestrutura, Deploy e Observabilidade
 
-Este documento estará aprovado quando o responsável pelo produto confirmar:
+O responsável pelo produto aprovou este documento em 2026-09-25.
 
-- orçamento;
-- domínio;
-- e-mail profissional;
-- prioridade Brasil;
-- trade-off Clerk/US;
-- ambientes;
-- isolamento;
-- deploy;
-- rollback;
-- banco;
-- storage;
-- backup;
-- restore;
-- observabilidade;
-- alertas;
-- uptime;
-- secrets;
-- critérios para provedores.
+Ficam canonizados neste documento:
 
-Após aprovação, o próximo documento será:
+- teto operacional inicial de R$ 50/mês;
+- domínio e e-mail profissional como requisitos de lançamento;
+- preferência por serviços gerenciados;
+- prioridade de dados persistentes no Brasil;
+- Clerk como direção preferencial de autenticação administrativa, aceitando conscientemente residência de identidade fora do Brasil;
+- ambientes Local, Preview/Staging e Production;
+- isolamento de dados entre ambientes;
+- deploy automatizado com preview e rollback;
+- banco gerenciado com preferência por região São Paulo;
+- mídia fora do Git;
+- backup com retenção próxima de 30 dias quando viável;
+- restore obrigatoriamente testado;
+- secrets fora do repositório;
+- observabilidade e uptime monitoring;
+- alertas iniciais por e-mail;
+- infraestrutura pay-as-you-grow;
+- aprovação humana para novos custos recorrentes;
+- Vercel Hobby não utilizado como produção comercial dentro das condições atuais;
+- decisão final de hosting, banco e storage condicionada à stack aprovada no Documento 08.
+
+O próximo documento será:
 
 `08_Visao_do_Tech_Lead_e_Stack.md`
