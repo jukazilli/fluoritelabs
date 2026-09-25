@@ -27,11 +27,19 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const isProduction =
+    typeof window !== "undefined"
+      ? window.location.hostname === "fluoritelabs.com" ||
+        window.location.hostname === "www.fluoritelabs.com"
+      : process.env.NODE_ENV === "production" &&
+        process.env.VITE_SITE_URL === "https://fluoritelabs.com";
+
   return (
     <html lang="pt-BR">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content={isProduction ? "index, follow" : "noindex, nofollow"} />
         <Meta />
         <Links />
       </head>

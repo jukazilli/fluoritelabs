@@ -15,4 +15,32 @@
       "bucket_name": "fluoritelabs-media",
     },
   ],
+  "env": {
+    "preview": {
+      "name": "fluoritelabs-preview",
+      "vars": {
+        "NODE_ENV": "preview",
+        "VITE_SITE_URL": "https://preview.fluoritelabs.com",
+      },
+      "r2_buckets": [
+        {
+          "binding": "MEDIA_BUCKET",
+          "bucket_name": "fluoritelabs-media-preview",
+        },
+      ],
+    },
+    "production": {
+      "name": "fluoritelabs-production",
+      "vars": {
+        "NODE_ENV": "production",
+        "VITE_SITE_URL": "https://fluoritelabs.com",
+      },
+      "r2_buckets": [
+        {
+          "binding": "MEDIA_BUCKET",
+          "bucket_name": "fluoritelabs-media",
+        },
+      ],
+    },
+  },
 }
