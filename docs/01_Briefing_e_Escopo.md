@@ -530,9 +530,13 @@ A primeira versão deverá priorizar:
 - captura correta de dados;
 - analytics;
 - rastreabilidade da origem do lead;
+- registro interno mínimo dos leads recebidos;
+- administração do FLUOR JOURNAL;
 - integração com ferramentas adequadas quando necessária;
 - visão básica do desempenho comercial e do site;
 - capacidade de evolução.
+
+A V1 poderá possuir uma área administrativa mínima para leads e conteúdo editorial. Isso não representa um CRM completo nem um sistema de gestão de projetos.
 
 CRM próprio, gestão interna de projetos e ferramentas operacionais adicionais ficam adiados até que o volume de leads, clientes e projetos gere dificuldade real de gestão.
 
