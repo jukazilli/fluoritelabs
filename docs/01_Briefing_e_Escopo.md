@@ -1,7 +1,7 @@
 # Fluorite Labs — Briefing de Produto e Escopo
 
 > **Documento:** 01  
-> **Status:** EM REVISÃO — não canonizado  
+> **Status:** APROVADO — documento canônico  
 > **Última atualização:** 2026-09-24  
 > **Responsável pelo produto:** Fluorite Labs  
 > **Fonte:** Discovery realizado com o responsável pelo produto
@@ -45,19 +45,27 @@ A Fluorite Labs começa especializada em presença digital para empresas e evolu
 
 A Fluorite Labs deve ser percebida como um estúdio digital capaz de transformar a credibilidade e a especialização de uma empresa em uma presença digital profissional que gere novas oportunidades de negócio.
 
-### 3.2. Promessa estratégica sugerida
+### 3.2. Direção de mensagem
 
-> **Sites que transformam credibilidade em novos negócios.**
+A Fluorite Labs **não terá uma promessa longa ou slogan comercial obrigatório nesta etapa**.
 
-Esta frase registra a **promessa estratégica da marca**, mas não deve ser interpretada automaticamente como a headline final da Hero.
+A direção aprovada é preservar a força da composição visual usando mensagens curtas, memoráveis e com alto valor editorial.
 
-A copy visível no site deverá respeitar a direção visual aprovada. Na Hero, especialmente, a linguagem poderá ser mais curta, editorial, conceitual e cinematográfica, desde que a proposta de valor continue compreensível no conjunto headline + texto de apoio + CTA.
+A Hero não deve tentar explicar toda a proposta comercial da empresa. A compreensão deverá surgir do conjunto formado por:
 
-### 3.3. Mensagem comercial de apoio sugerida
+- headline curta;
+- texto de apoio compacto;
+- CTA;
+- direção visual;
+- seções seguintes da página.
 
-> Criamos sites rápidos, estratégicos e preparados para serem encontrados no Google para empresas que precisam transmitir confiança antes mesmo do primeiro contato comercial.
+A definição da headline final será feita em conjunto com a Visão de Produto, UX, UI e copywriting, respeitando a composição visual aprovada.
 
-Esta frase também é uma referência de mensagem, não um bloco obrigatório de copy. A versão final deverá ser refinada em conjunto com UX, UI, SEO e copywriting para preservar ritmo visual, hierarquia e clareza.
+### 3.3. Regra de copy comercial
+
+Mensagens mais descritivas sobre desenvolvimento de sites, SEO, performance, conversão e serviços devem existir onde contribuírem para clareza e descoberta orgânica, mas não devem ser forçadas dentro da Hero.
+
+A copy deve adaptar-se ao sistema visual, e não obrigar o sistema visual a acomodar textos excessivos.
 
 ### 3.4. Diferenciação pretendida
 
@@ -148,14 +156,13 @@ A primeira estratégia orgânica regional terá foco em:
 - Joinville e região;
 - Curitiba e região.
 
-### Pendente
+### Direção comercial aprovada
 
-Ainda não está definido se a comunicação comercial do lançamento deverá:
+A estratégia inicial de SEO terá foco regional em Joinville e Curitiba, mas a Fluorite Labs **não deverá se apresentar como uma empresa limitada a essas cidades**.
 
-- declarar atuação nacional desde o primeiro dia; ou
-- priorizar explicitamente Sul do Brasil durante a fase inicial.
+O site deverá manter comunicação comercial capaz de atender clientes de outras regiões do Brasil, enquanto a estratégia orgânica inicial concentra esforços onde há prioridade comercial.
 
-A arquitetura do site não deve impedir expansão nacional futura.
+A arquitetura deverá permitir expansão geográfica futura sem necessidade de reposicionar a marca.
 
 ---
 
@@ -313,6 +320,8 @@ A Fluorite Labs ainda não possui projetos reais de clientes.
 O lançamento utilizará projetos conceituais produzidos especificamente para demonstrar capacidade.
 
 Esses projetos não deverão ser apresentados como clientes reais.
+
+A nomenclatura visual preferencial para identificá-los será **Concepts**, ou variação curta equivalente aprovada posteriormente em UI/copywriting.
 
 ### Estratégia inicial sugerida
 
@@ -514,15 +523,22 @@ O responsável pelo produto deseja que o ecossistema da Fluorite Labs permita, a
 
 Isso **não significa que um CRM e um sistema completo de gestão de projetos serão desenvolvidos dentro do site na primeira versão**.
 
+### Decisão de escopo para V1
+
+A prioridade é colocar a operação no ar com o menor peso operacional possível.
+
 A primeira versão deverá priorizar:
 
 - captura correta de dados;
 - analytics;
 - rastreabilidade da origem do lead;
-- integração com ferramentas adequadas;
+- integração com ferramentas adequadas quando necessária;
+- visão básica do desempenho comercial e do site;
 - capacidade de evolução.
 
-A decisão entre usar integrações existentes ou construir ferramentas próprias será tomada nas etapas técnicas.
+CRM próprio, gestão interna de projetos e ferramentas operacionais adicionais ficam adiados até que o volume de leads, clientes e projetos gere dificuldade real de gestão.
+
+Quando essa necessidade aparecer, a decisão entre integrar ferramentas existentes ou construir soluções próprias será avaliada com base em dados da operação.
 
 ---
 
@@ -765,40 +781,43 @@ Hipóteses não devem ser tratadas como fatos até que existam dados.
 
 As seguintes decisões permanecem abertas e não bloqueiam o encerramento deste briefing:
 
-1. alcance comercial nacional ou inicialmente regional;
-2. exibição pública do preço “a partir de R$ 1.000”;
-3. faixas de investimento do formulário;
-4. quantidade de cases conceituais no lançamento;
-5. quais serviços terão páginas próprias;
-6. arquitetura final das páginas;
-7. estratégia editorial detalhada;
-8. modelo de hospedagem e manutenção;
-9. CRM ou ferramenta comercial utilizada;
-10. ferramenta de gestão de projetos;
-11. solução de analytics;
-12. integração exata com WhatsApp;
-13. stack;
-14. CMS;
-15. infraestrutura.
+1. exibição pública do preço “a partir de R$ 1.000”;
+2. faixas de investimento do formulário;
+3. quantidade de Concepts no lançamento;
+4. quais serviços terão páginas próprias;
+5. arquitetura final das páginas;
+6. estratégia editorial detalhada;
+7. modelo de hospedagem e manutenção;
+8. solução de analytics;
+9. integração exata com WhatsApp;
+10. stack;
+11. CMS;
+12. infraestrutura.
+
+CRM próprio e gestão interna de projetos não são pendências da V1; são possibilidades futuras condicionadas à necessidade operacional real.
 
 Cada decisão deve ser tomada no documento responsável por ela.
 
 ---
 
-## 22. Critérios de aceite deste Briefing
+## 22. Aprovação do Briefing
 
-Este documento estará aprovado quando o responsável pelo produto confirmar que ele representa corretamente:
+O responsável pelo produto aprovou as decisões centrais deste briefing em 2026-09-24.
 
-- o que é a Fluorite Labs;
-- quem ela quer atender;
-- o que ela venderá inicialmente;
-- como pretende conquistar clientes;
-- qual papel o site terá no negócio;
-- quais funcionalidades macro são necessárias;
-- o que não pertence à primeira versão;
-- quais resultados iniciais indicarão sucesso.
+Ficam canonizados neste documento:
 
-Após aprovação, o próximo documento será:
+- o posicionamento inicial da Fluorite Labs;
+- os segmentos prioritários;
+- a oferta inicial;
+- o foco regional de SEO em Joinville e Curitiba sem limitar comercialmente a marca;
+- o uso de projetos conceituais identificados como **Concepts**;
+- o microbriefing com encaminhamento para WhatsApp;
+- o FLUOR JOURNAL;
+- a prioridade de colocar a operação, analytics e dados no ar antes de construir ferramentas próprias de CRM ou gestão;
+- a regra de que copywriting deve preservar a direção visual e a densidade editorial do site;
+- as métricas iniciais de sucesso.
+
+O próximo documento será:
 
 `02_Visao_de_Produto_PO.md`
 
