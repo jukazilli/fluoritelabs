@@ -34,4 +34,16 @@ Quando houver conflito:
 
 Uma implementação funcionalmente correta, mas visualmente fora desta direção, não é considerada concluída.
 
-> Observação: este arquivo versionado é uma cópia otimizada da referência aprovada para consulta rápida no repositório. Os documentos 03, 04, 08, 09 e 10 definem os gates de fidelidade visual e validação.
+## Gate visual
+
+Antes da expansão completa da Home:
+
+1. implementar tokens;
+2. implementar tipografia;
+3. construir a Hero desktop;
+4. gerar screenshot em viewport comparável;
+5. comparar lado a lado com esta referência;
+6. corrigir os deltas;
+7. obter aprovação humana no gate `VIS-006`.
+
+> A imagem versionada no repositório é uma cópia otimizada da referência aprovada, mantendo a composição original para consulta rápida pelos agentes de implementação.
