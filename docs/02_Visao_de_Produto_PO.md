@@ -252,7 +252,7 @@ A ordem macro de prioridade é:
 ### Pode ser reduzido ou adiado
 
 - quantidade de projetos conceituais;
-- funcionalidades administrativas;
+- funcionalidades administrativas além do backoffice mínimo;
 - CRM próprio;
 - gestão própria de projetos;
 - automações comerciais avançadas;
@@ -747,8 +747,9 @@ As seguintes decisões passam a ser tratadas como pilares de produto:
 11. o FLUOR JOURNAL é estratégico, porém discreto na Home;
 12. o footer deve funcionar como uma seção;
 13. a marca não deve aparentar escala empresarial inexistente;
-14. CRM próprio e gestão interna não são prioridade da V1;
-15. qualidade visual, conversão, SEO essencial, analytics e performance não devem ser sacrificados para acelerar o lançamento.
+14. a V1 pode incluir um backoffice mínimo para leads e FLUOR JOURNAL;
+15. CRM próprio e gestão interna completa não são prioridade da V1;
+16. qualidade visual, conversão, SEO essencial, analytics e performance não devem ser sacrificados para acelerar o lançamento.
 
 ---
 
