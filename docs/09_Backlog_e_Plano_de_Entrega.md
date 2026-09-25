@@ -1,7 +1,7 @@
 # Fluorite Labs — Backlog e Plano de Entrega
 
 > **Documento:** 09  
-> **Status:** EM REVISÃO — não canonizado  
+> **Status:** APROVADO — documento canônico  
 > **Última atualização:** 2026-09-25  
 > **Base canônica:** Documentos 01–08 aprovados
 
@@ -2323,26 +2323,23 @@ Mitigação:
 
 ---
 
-# 23. Critérios de aprovação deste backlog
+# 23. Aprovação do Backlog e Plano de Entrega
 
-Este documento estará aprovado quando o responsável pelo produto confirmar:
+O responsável pelo produto aprovou este documento em 2026-09-25.
 
-- marcos;
-- ordem;
-- itens FND;
-- gate visual;
-- Home;
-- Lead;
-- Work;
-- Journal;
-- Admin;
-- SEO;
-- QA;
-- Release;
-- itens fora de escopo;
-- Definition of Done.
+Ficam canonizados neste documento:
 
-Após aprovação, o próximo documento será:
+- a divisão por marcos M0–M7;
+- a ordem Fundação → Hero → aprovação visual → Home → Leads → Serviços/Work → Journal/Admin → SEO/QA → Produção;
+- os identificadores FND, VIS, PUB, LEAD, WORK, JRN, ADM, SEO, QA e REL;
+- o gate visual obrigatório antes da expansão completa da Home;
+- os critérios de aceite por item;
+- a exigência de testes e evidências antes de marcar itens como VALIDATED;
+- a Definition of Done global;
+- os itens explicitamente fora da V1;
+- a regra de que uma implementação funcionalmente correta, porém visualmente fora da direção aprovada, não é considerada concluída.
+
+O próximo documento será:
 
 `10_Setup_e_Fundacao.md`
 
