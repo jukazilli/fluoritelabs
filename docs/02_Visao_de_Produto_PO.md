@@ -1,7 +1,7 @@
 # Fluorite Labs — Visão de Produto / Product Owner
 
 > **Documento:** 02  
-> **Status:** EM REVISÃO — não canonizado  
+> **Status:** APROVADO — documento canônico  
 > **Última atualização:** 2026-09-24  
 > **Documento anterior:** `01_Briefing_e_Escopo.md`
 
@@ -768,21 +768,24 @@ Essas hipóteses deverão ser avaliadas com dados reais.
 
 ---
 
-## 21. Critérios de aceite deste documento
+## 21. Aprovação da Visão de Produto
 
-A Visão de Produto estará aprovada quando o responsável pelo produto confirmar que este documento representa corretamente:
+O responsável pelo produto aprovou esta Visão de Produto em 2026-09-24.
 
-- quem é o visitante prioritário;
-- qual percepção o site deve gerar;
-- como a experiência deve orientar o visitante;
-- qual é a hierarquia da Home;
-- qual é a estratégia de conversão;
-- como preço, Work e Journal serão tratados;
-- quais trade-offs devem orientar decisões;
-- quais comportamentos a marca deve evitar;
-- o que não deve ser sacrificado na V1.
+Ficam canonizados neste documento:
 
-Após aprovação, o próximo documento será:
+- o visitante prioritário;
+- a percepção que o site deve gerar;
+- a jornada principal;
+- a hierarquia da Home;
+- a estratégia de conversão;
+- o tratamento de preço, Work e FLUOR JOURNAL;
+- os trade-offs preferidos;
+- a regra de que UI e UX devem conduzir sem depender de copy instrucional;
+- a prioridade da V1;
+- a decisão de manter a marca premium sem simular escala empresarial inexistente.
+
+O próximo documento será:
 
 `03_Direcao_de_Marca_UI_e_Design_System.md`
 
