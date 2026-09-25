@@ -6,6 +6,8 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "preview": "wrangler dev",
+    "test": "pnpm test:unit && pnpm test:smoke",
+    "test:unit": "node --experimental-strip-types tests/unit/env.test.mjs",
     "test:smoke": "node tests/smoke/runtime.test.mjs",
     "typecheck": "react-router typegen && tsc",
     "cf-typegen": "wrangler types"
@@ -14,7 +16,8 @@
     "isbot": "^5.1.28",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router": "^8.4.0"
+    "react-router": "^8.4.0",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.60.1",
