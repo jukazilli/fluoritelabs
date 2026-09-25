@@ -1,7 +1,7 @@
 # Fluorite Labs — SEO, Performance e Otimização
 
 > **Documento:** 05  
-> **Status:** EM REVISÃO — não canonizado  
+> **Status:** APROVADO — documento canônico  
 > **Última atualização:** 2026-09-24  
 > **Documentos anteriores:** `01_Briefing_e_Escopo.md`, `02_Visao_de_Produto_PO.md`, `03_Direcao_de_Marca_UI_e_Design_System.md`, `04_Experiencia_UX_e_Arquitetura_de_Informacao.md`
 
@@ -1393,27 +1393,27 @@ Os próximos documentos deverão decidir:
 
 ---
 
-# 53. Critérios de aprovação
+# 53. Aprovação de SEO, Performance e Otimização
 
-Este documento estará aprovado quando o responsável pelo produto confirmar:
+O responsável pelo produto aprovou este documento em 2026-09-24.
 
-- estratégia de palavras-chave;
-- política local;
-- política do Perfil da Empresa;
-- processo do Journal;
-- uso de IA;
-- metadata;
-- indexação;
-- sitemap;
-- schema;
-- analytics;
-- eventos;
-- performance;
-- Core Web Vitals;
-- mídia;
-- metas;
-- rotina de otimização.
+Ficam canonizados neste documento:
 
-Após aprovação, o próximo documento será:
+- a estratégia de SEO em camadas comercial, segmentada e editorial;
+- o foco orgânico inicial sem posicionamento público restrito a Joinville e Curitiba;
+- a decisão de não criar páginas locais artificiais no lançamento;
+- o Perfil da Empresa condicionado à elegibilidade real;
+- a cadência de 3 publicações mensais no FLUOR JOURNAL;
+- o processo editorial com IA assistiva e revisão humana;
+- as regras de metadata, canonical, sitemap, robots e structured data;
+- a exclusão de admin, drafts e previews da indexação;
+- GA4 + Search Console como base de mensuração;
+- lead_created como conversão principal;
+- Core Web Vitals como requisito real de experiência;
+- vídeo, imagens, fontes e transições subordinados à performance;
+- a meta de 40% do tráfego proveniente de busca orgânica em seis meses;
+- a rotina de revisão 30/60/90 dias.
+
+O próximo documento será:
 
 `06_Arquitetura_e_Engenharia.md`
