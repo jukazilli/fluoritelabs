@@ -24,6 +24,19 @@ export const links: Route.LinksFunction = () => [
     href: "https://fonts.gstatic.com",
     crossOrigin: "anonymous",
   },
+  {
+    rel: "preconnect",
+    href: "https://api.fontshare.com",
+    crossOrigin: "anonymous",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap",
+  },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {

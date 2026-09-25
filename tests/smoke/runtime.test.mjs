@@ -32,10 +32,13 @@ async function runSmokeTest() {
   );
 
   const html = await response.text();
-  assert.ok(html.includes("Fluorite Labs"), "HTML must include 'Fluorite Labs'");
   assert.ok(
-    html.includes("Fundação Técnica Inicializada"),
-    "HTML must include 'Fundação Técnica Inicializada'",
+    html.includes("Fluorite Labs") || html.includes("FLUORITE"),
+    "HTML must include 'Fluorite Labs' or 'FLUORITE'",
+  );
+  assert.ok(
+    html.includes("hero-clean.webp"),
+    "HTML must include hero graphic asset 'hero-clean.webp'",
   );
 
   console.log("✓ Cloudflare Worker runtime smoke test passed successfully!");

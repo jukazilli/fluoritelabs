@@ -1,25 +1,252 @@
 @import "tailwindcss";
 
 :root {
-  --color-obsidian-950: #030304;
-  --color-obsidian-900: #070709;
-  --color-obsidian-800: #0e0e13;
-  --color-fluor-violet: #8a63f2;
-  --color-fluor-teal: #14b8a6;
-  --color-fluor-cyan: #22d3ee;
-  --color-text-primary: #f5f5f7;
-  --color-text-secondary: #9494a8;
-  --color-text-muted: #5e5e72;
+  /* 6.1 Base Dark */
+  --color-obsidian-black: #05070b;
+  --color-deep-charcoal: #0a0e14;
+  --color-soft-white: #f5f7fa;
+  --color-muted-silver: #a8b0bc;
+
+  /* 6.2 Fluorite Accents */
+  --color-fluorite-violet: #8c72ff;
+  --color-crystal-lilac: #c7b8ff;
+  --color-emerald-teal: #62e7d6;
+  --color-ice-cyan: #a8f2ff;
+  --color-deep-indigo-glow: #3c4c9e;
+
+  /* 6.3 Effects & Glows */
+  --glow-white: rgba(255, 255, 255, 0.75);
+  --glow-violet: rgba(140, 114, 255, 0.35);
+  --glow-teal: rgba(98, 231, 214, 0.28);
+  --glow-cyan: rgba(168, 242, 255, 0.3);
+
+  /* 6.4 Base Editorial Clara */
+  --color-editorial-white: #f7f7f5;
+  --color-editorial-warm-white: #f2f1ed;
+  --color-refraction-mist: #edeaf7;
+  --color-ink: #111318;
+  --color-ink-muted: #555b66;
+
+  /* 7. Typography */
+  --font-display:
+    "General Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body:
+    "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* 11. UI Tokens */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.15);
+  --border-highlight: rgba(140, 114, 255, 0.3);
+
+  /* Motion */
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-micro: 200ms;
+  --duration-smooth: 400ms;
+  --duration-deliberate: 800ms;
+  --duration-ambient: 1200ms;
+}
+
+@theme {
+  --color-obsidian-black: var(--color-obsidian-black);
+  --color-deep-charcoal: var(--color-deep-charcoal);
+  --color-soft-white: var(--color-soft-white);
+  --color-muted-silver: var(--color-muted-silver);
+
+  --color-fluorite-violet: var(--color-fluorite-violet);
+  --color-crystal-lilac: var(--color-crystal-lilac);
+  --color-emerald-teal: var(--color-emerald-teal);
+  --color-ice-cyan: var(--color-ice-cyan);
+  --color-deep-indigo-glow: var(--color-deep-indigo-glow);
+
+  --color-editorial-white: var(--color-editorial-white);
+  --color-editorial-warm-white: var(--color-editorial-warm-white);
+  --color-refraction-mist: var(--color-refraction-mist);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-pill: var(--radius-pill);
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-obsidian-950);
-  color: var(--color-text-primary);
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--color-obsidian-black);
+  color: var(--color-soft-white);
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Typography Utility Classes */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.text-display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 6.25rem); /* 48px to 100px */
+  line-height: 0.95;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.text-display-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* 40px to 72px */
+  line-height: 1.02;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.text-display-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem); /* 28px to 44px */
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.text-display-h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2vw, 1.75rem); /* 20px to 28px */
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.text-body-large {
+  font-family: var(--font-body);
+  font-size: clamp(1.125rem, 1.5vw, 1.625rem); /* 18px to 26px */
+  line-height: 1.38;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.text-body-regular {
+  font-family: var(--font-body);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.text-ui-small {
+  font-family: var(--font-body);
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.text-micro-overline {
+  font-family: var(--font-body);
+  font-size: 0.75rem; /* 12px */
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Cinematic Iridescent Text Gradient (Ideas, refracted) */
+.text-refraction-gradient {
+  background: linear-gradient(
+    135deg,
+    #ffffff 20%,
+    var(--color-crystal-lilac) 45%,
+    var(--color-ice-cyan) 75%,
+    var(--color-emerald-teal) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glass & Border Utilities */
+.border-subtle {
+  border: 1px solid var(--border-subtle);
+}
+
+.border-subtle-hover:hover {
+  border-color: var(--border-medium);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-pill);
+}
+
+.glass-card {
+  background: rgba(10, 14, 20, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Buttons */
+.btn-primary-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  color: #05070b;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  height: 52px;
+  padding: 0 1.75rem;
+  border-radius: var(--radius-pill);
+  transition: all var(--duration-smooth) var(--ease-cinematic);
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary-pill:hover {
+  background-color: var(--color-soft-white);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.15);
+}
+
+.btn-secondary-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--color-soft-white);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.875rem;
+  height: 44px;
+  padding: 0 1.5rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all var(--duration-smooth) var(--ease-cinematic);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-secondary-pill:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.05);
 }

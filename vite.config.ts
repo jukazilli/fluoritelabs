@@ -8,6 +8,9 @@ export default defineConfig(({ command }) => {
   const useWorkerd = process.env.USE_WORKERD === "true";
 
   return {
+    resolve: {
+      dedupe: ["react", "react-dom", "react-router"],
+    },
     plugins: [
       (isBuild || useWorkerd) &&
         cloudflare({

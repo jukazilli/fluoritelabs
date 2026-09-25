@@ -630,7 +630,7 @@ FND-004, FND-007.
 ## VIS-001 — Registrar referência visual oficial no projeto
 
 **Origem:** D03, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -648,14 +648,14 @@ FND-001.
 
 ### Evidência
 
-- referência documentada e acessível no fluxo de desenvolvimento.
+- referência documentada e acessível no fluxo de desenvolvimento (`references/design/canonical-reference.png`, `references/design/README.md`).
 
 ---
 
 ## VIS-002 — Implementar tokens visuais
 
 **Origem:** D03, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -685,14 +685,14 @@ FND-001.
 
 ### Evidência
 
-- tokens aplicados em página técnica/sandbox.
+- tokens aplicados em página técnica/sandbox (`app/routes/design-system.tsx`, `tests/unit/tokens.test.mjs`).
 
 ---
 
 ## VIS-003 — Configurar tipografia
 
 **Origem:** D03  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -712,14 +712,14 @@ VIS-002.
 
 ### Evidência
 
-- screenshot + verificação de carregamento.
+- screenshot + verificação de carregamento (`app/root.tsx` fontshare + google fonts, `tests/unit/tokens.test.mjs`).
 
 ---
 
 ## VIS-004 — Implementar shell da Hero desktop
 
 **Origem:** D03, D04, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -753,14 +753,14 @@ VIS-001, VIS-002, VIS-003.
 
 ### Evidência
 
-- screenshot desktop lado a lado com referência.
+- screenshot desktop lado a lado com referência (`docs/visual-proof-side-by-side.png`, `docs/hero-desktop-implemented.png`).
 
 ---
 
 ## VIS-005 — Implementar mídia da Hero
 
 **Origem:** D03, D05, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -787,14 +787,14 @@ VIS-004.
 
 ### Evidência
 
-- gravação/screenshot da Hero.
+- gravação/screenshot da Hero (`public/images/hero-clean.webp` 178 KB, `tests/unit/tokens.test.mjs`).
 
 ---
 
 ## VIS-006 — Gate de aprovação visual desktop
 
 **Origem:** D03, D08  
-**Status:** NOT_STARTED
+**Status:** WAITING_HUMAN_APPROVAL
 
 ### Objetivo
 
