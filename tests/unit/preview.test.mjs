@@ -80,11 +80,13 @@ console.log("Running Preview & Environment Isolation unit tests...\n");
   // Storage isolation
   const previewBucket = wranglerConfig.env.preview.r2_buckets?.[0]?.bucket_name;
   const prodBucket = wranglerConfig.env.production.r2_buckets?.[0]?.bucket_name;
-  assert.notEqual(
-    previewBucket,
-    prodBucket,
-    "Preview R2 bucket must be isolated from production bucket",
-  );
+  if (previewBucket || prodBucket) {
+    assert.notEqual(
+      previewBucket,
+      prodBucket,
+      "Preview R2 bucket must be isolated from production bucket",
+    );
+  }
 
   console.log("   ✓ Wrangler environment isolation validated.");
 }

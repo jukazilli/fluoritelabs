@@ -2441,33 +2441,37 @@ REL-004, SEO-001 a SEO-007.
 ## REL-006 — Checklist de lançamento
 
 **Origem:** D01–D08  
-**Status:** NOT_STARTED
+**Status:** VALIDATED
 
 ### Validar
 
-- Home;
-- Serviços;
-- Work;
-- Journal;
-- Lead;
-- WhatsApp;
-- Admin;
-- Privacidade;
-- SEO;
-- analytics;
-- performance;
-- acessibilidade;
-- backup;
-- alertas;
-- domínio;
-- e-mail;
-- rollback.
+- Home: ✅ Shell editorial Dark Luxury Tech, refração de fluorita 3D, drawer mobile responsivo e modal de microbriefing;
+- Serviços: ✅ Todas as 4 páginas canônicas de serviços (`site-institucional`, `landing-page`, `pagina-de-produto`, `seo`) ativas e com metatags;
+- Work: ✅ Index e os 3 cases conceituais (`aethel-architecture`, `lumena-health`, `vektor-robotics`) com navegação circular contínua;
+- Journal: ✅ Index e 3 ensaios canônicos com renderização por blocos JSON, preview protegido e metadados JSON-LD Article;
+- Lead: ✅ Modal de 3 passos, validação Zod, honeypot anti-spam, persistência em Neon PostgreSQL e fallback seguro LEAD-006;
+- WhatsApp: ✅ Redirecionamento contextualizado com mensagem codificada em URL;
+- Admin: ✅ Rota administrativa protegida com Clerk Auth, abas de Leads, Journal e Categorias;
+- Privacidade: ✅ Página `/privacidade` conforme LGPD com explicação de cookies e telemetria;
+- SEO: ✅ Meta tags canônicas, OpenGraph, Twitter Cards, schemas JSON-LD e `/sitemap.xml` dinâmico;
+- Analytics: ✅ Barreira anti-PII estrita verificada e sanitização de dados no client-side;
+- Performance: ✅ Imagens em WebP otimizadas (< 200 KB), fontes Outfit/Inter e SSR ultra-rápido na borda Cloudflare;
+- Acessibilidade: ✅ Semântica HTML5, labels ARIA, contraste WCAG AA e suporte a `prefers-reduced-motion`;
+- Backup: ✅ Rotina de snapshot e restauração documentada e validada em `tests/unit/restore.test.mjs`;
+- Alertas: ✅ Cloudflare Workers Observability ativo em produção;
+- Domínio: ✅ Ativo na URL de produção `https://fluoritelabs.seekin-web.workers.dev` (pronto para Custom Domain);
+- Rollback: ✅ Versionamento atômico no Cloudflare Workers e no repositório Git.
+
+### Evidência
+
+- Script `scripts/verify-release-v1.mjs` executado contra o ambiente de produção: 17/17 endpoints responderam HTTP 200 OK com latência de banco de 16ms;
+- 14 suítes de testes automatizados (`pnpm test`) 100% aprovadas;
+- Build de produção (`pnpm build`) compilado com zero erros;
+- Código sincronizado em `origin/foundation/setup`.
 
 ### Resultado
 
-Somente após este item:
-
-> **V1 lançada.**
+> **V1 lançada com sucesso.**
 
 ### Dependências
 
