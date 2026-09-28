@@ -220,7 +220,7 @@ export const CANONICAL_WORK_CASES: Record<string, WorkCase> = {
       ],
     },
     image: "/images/work-vertice.webp",
-    demoUrl: "/demo/materiais-construcao",
+    demoUrl: "https://vertice-materiais.seekin-web.workers.dev",
     nextSlug: "aethel-architecture",
     nextTitle: "Aethel Architecture Studio",
     seoTitle: "Vértice Materiais & Acabamentos — Estudo de Caso & Demonstração | Fluorite Labs",

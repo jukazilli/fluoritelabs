@@ -222,15 +222,17 @@ export default function WorkCaseDetail() {
 
           {caseItem.demoUrl && (
             <div className="pt-2 flex flex-wrap items-center gap-4">
-              <Link
-                to={caseItem.demoUrl}
+              <a
+                href={caseItem.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-sm transition-all shadow-lg hover:shadow-emerald-500/20"
               >
-                <span>⚡ Testar Demonstração Ao Vivo</span>
-                <span>→</span>
-              </Link>
+                <span>⚡ Acessar Website Oficial do Projeto</span>
+                <span>↗</span>
+              </a>
               <span className="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-3.5 py-1.5 rounded-full border border-emerald-500/30">
-                Protótipo Funcional com Catálogo & Cotação WhatsApp
+                Subdomínio Dedicado: vertice-materiais.seekin-web.workers.dev
               </span>
             </div>
           )}
@@ -250,13 +252,15 @@ export default function WorkCaseDetail() {
 
           {caseItem.demoUrl && (
             <div className="absolute bottom-6 right-6 z-20">
-              <Link
-                to={caseItem.demoUrl}
+              <a
+                href={caseItem.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-xl bg-black/80 hover:bg-black backdrop-blur-md border border-white/20 text-white font-medium text-xs flex items-center gap-2 shadow-2xl transition-all"
               >
-                <span>Abrir Demonstração Funcional</span>
+                <span>Visitar Website do Projeto</span>
                 <span>↗</span>
-              </Link>
+              </a>
             </div>
           )}
         </div>
@@ -381,29 +385,31 @@ export default function WorkCaseDetail() {
         </div>
       </section>
 
-      {/* Live Interactive Demo Callout Banner */}
+      {/* Live Interactive Dedicated Subdomain Callout Banner */}
       {caseItem.demoUrl && (
         <section className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 py-12">
           <div className="p-8 sm:p-12 rounded-3xl border border-emerald-500/30 bg-gradient-to-r from-emerald-950/40 via-[#0c0e14] to-black flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
             <div className="space-y-2">
               <span className="text-[10px] font-mono text-emerald-400 tracking-widest uppercase bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
-                PROTÓTIPO VIVO • NAVEGÁVEL AGORA
+                WEBSITE REAL PUBLICADO EM SUBDOMÍNIO
               </span>
               <h3 className="text-2xl sm:text-3xl font-display font-medium text-white">
-                Teste o Catálogo de Materiais e a Cotação no WhatsApp
+                Navegue no Website Oficial da Vértice Materiais
               </h3>
               <p className="text-sm text-muted-silver max-w-xl font-light leading-relaxed">
-                Navegue no catálogo de demonstração da Vértice com busca instantânea indexada,
-                adicione produtos à cesta de cotação e visualize a mensagem formatada para o
-                WhatsApp com todos os códigos SKU prontos para o vendedor.
+                Este projeto foi publicado em um ambiente de borda totalmente isolado e autônomo.
+                Acesse o catálogo real da Vértice com busca instantânea, adicione itens à cesta de
+                cotação e teste o envio formatado para o WhatsApp comercial.
               </p>
             </div>
-            <Link
-              to={caseItem.demoUrl}
+            <a
+              href={caseItem.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-sm transition-all shadow-xl hover:scale-105 whitespace-nowrap cursor-pointer"
             >
-              Abrir Demonstração Ao Vivo →
-            </Link>
+              Acessar vertice-materiais.seekin-web.workers.dev ↗
+            </a>
           </div>
         </section>
       )}

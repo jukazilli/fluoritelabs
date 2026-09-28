@@ -243,13 +243,15 @@ export default function WorkIndex() {
                   </Link>
 
                   {item.demoUrl && (
-                    <Link
-                      to={item.demoUrl}
+                    <a
+                      href={item.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 bg-emerald-500/10 hover:bg-emerald-500/20 px-3 py-1.5 rounded-full border border-emerald-500/30 transition-all"
                     >
-                      <span>⚡ Demonstração Ao Vivo</span>
-                      <span>→</span>
-                    </Link>
+                      <span>⚡ Acessar Subdomínio</span>
+                      <span>↗</span>
+                    </a>
                   )}
                 </div>
               </div>
