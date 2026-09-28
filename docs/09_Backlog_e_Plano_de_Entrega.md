@@ -2385,7 +2385,7 @@ FND-012.
 ## REL-004 — Deploy de produção
 
 **Origem:** D07  
-**Status:** NOT_STARTED
+**Status:** VALIDATED
 
 ### Critérios
 
@@ -2401,12 +2401,20 @@ FND-012.
 
 QA-001 a QA-008, REL-001.
 
+### Evidência
+
+- Deploy real concluído com sucesso no Cloudflare Workers em `https://fluoritelabs.seekin-web.workers.dev`;
+- 35 assets estáticos publicados via Cloudflare Workers Static Assets;
+- Segredos (`DATABASE_URL`, `CLERK_SECRET_KEY`, `CLERK_PUBLISHABLE_KEY`) injetados via `wrangler secret put`;
+- Smoke test de produção ao vivo: `GET /api/health` retornando HTTP 200 `{"status":"healthy","services":{"app":"ok","database":"connected"}}`;
+- Código sincronizado e commitado em `origin/foundation/setup`.
+
 ---
 
 ## REL-005 — Ativar SEO e analytics de produção
 
 **Origem:** D05  
-**Status:** NOT_STARTED
+**Status:** VALIDATED
 
 ### Critérios
 
@@ -2421,6 +2429,12 @@ QA-001 a QA-008, REL-001.
 ### Dependências
 
 REL-004, SEO-001 a SEO-007.
+
+### Evidência
+
+- `sitemap.xml` dinâmico ativo em produção com todas as rotas públicas, frequências e prioridades;
+- Schemas JSON-LD estruturados (`Organization`, `Article`, `BreadcrumbList`) em produção;
+- Barreira de telemetria anti-PII ativa com consentimento e política de privacidade `/privacidade`.
 
 ---
 
