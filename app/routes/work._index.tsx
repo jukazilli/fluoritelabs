@@ -231,15 +231,27 @@ export default function WorkIndex() {
                   {item.summary}
                 </p>
 
-                <Link
-                  to={`/work/${item.slug}`}
-                  className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-crystal-lilac transition-colors pt-2 group"
-                >
-                  <span>Ver estudo de caso detalhado</span>
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">
-                    →
-                  </span>
-                </Link>
+                <div className="flex flex-wrap items-center gap-4 pt-2">
+                  <Link
+                    to={`/work/${item.slug}`}
+                    className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-crystal-lilac transition-colors group"
+                  >
+                    <span>Ver estudo de caso detalhado</span>
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </Link>
+
+                  {item.demoUrl && (
+                    <Link
+                      to={item.demoUrl}
+                      className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 bg-emerald-500/10 hover:bg-emerald-500/20 px-3 py-1.5 rounded-full border border-emerald-500/30 transition-all"
+                    >
+                      <span>⚡ Demonstração Ao Vivo</span>
+                      <span>→</span>
+                    </Link>
+                  )}
+                </div>
               </div>
             </article>
           ))}

@@ -21,6 +21,7 @@ export interface WorkCase {
     performanceHighlights: string[];
   };
   image: string;
+  demoUrl?: string;
   nextSlug: string;
   nextTitle: string;
   seoTitle: string;
@@ -170,10 +171,60 @@ export const CANONICAL_WORK_CASES: Record<string, WorkCase> = {
       ],
     },
     image: "/images/work-vektor.webp",
-    nextSlug: "aethel-architecture",
-    nextTitle: "Aethel Architecture Studio",
+    nextSlug: "vertice-materiais",
+    nextTitle: "Vértice Materiais & Acabamentos",
     seoTitle: "Vektor Precision Robotics — Estudo de Caso | Fluorite Labs",
     seoDescription:
       "Estudo conceitual para fabricante de sistemas mecatrônicos industriais com visual telemetry, autoridade técnica e performance de elite.",
+  },
+
+  "vertice-materiais": {
+    slug: "vertice-materiais",
+    num: "04",
+    title: "Vértice Materiais & Acabamentos",
+    category: "Materiais de Construção & Varejo Técnico",
+    year: "2026",
+    badge: "CONCEITO",
+    summary:
+      "Catálogo de alta velocidade para 30.000+ SKUs com carrinho de cotação direta e handoff estruturado para WhatsApp comercial.",
+    headline:
+      "Busca instantânea em 30 mil itens, cotação por volume sem atrito e fechamento direto no WhatsApp.",
+    clientContext: {
+      overview:
+        "A Vértice é um conceito de distribuidora e home center técnico de materiais de construção, elétricos, hidráulicos e acabamentos com catálogo de milhares de produtos para construtoras, empreiteiros e consumidor final.",
+      challenge:
+        "Lojas de materiais de construção perdem centenas de horas em balcão e WhatsApp respondendo cotações manuais. E-commerces tradicionais com checkout por cartão falham no setor da construção, onde preços dependem de volume, frete por caminhão e faturamento faturado para obra. A Vértice precisava de uma ferramenta rápida onde o cliente monta sua lista completa com SKUs e a envia pronta ao vendedor.",
+    },
+    designConcept: {
+      philosophy:
+        "Densidade técnica com clareza brutalista: tipografia monoespaçada para códigos de produto, contraste de alta visibilidade em obra sob sol forte e navegação por etapas de construção.",
+      visualDirection:
+        "Estética técnica inspirada em pranchetas de engenharia: fundo obsidiana profunda, acentos em verde esmeralda para disponibilidade de estoque e cards com informações dimensionais completas.",
+      palette: [
+        { name: "Basalt Obsidian", hex: "#07080a", role: "Fundo estrutural e contraste" },
+        { name: "Emerald Signal", hex: "#10b981", role: "Indicadores de estoque e cotação" },
+        { name: "Technical Gray", hex: "#94a3b8", role: "Especificações e códigos SKU" },
+      ],
+    },
+    engineeringDetails: {
+      techStack: [
+        "Indexação em memória de catálogo com busca instantânea (< 25ms)",
+        "Suporte a ingestão de planilhas ERP (Excel/CSV) em lote assíncrono",
+        "Carrinho client-side com persistência local sem necessidade de login prévio",
+        "Formatador inteligente de mensagens para API do WhatsApp com SKUs e quantidades",
+      ],
+      performanceHighlights: [
+        "Filtragem instantânea de milhares de itens no celular sem travamentos",
+        "Tamanho do payload inicial de catálogo: < 45KB comprimido",
+        "Aumento estimado de 3.2x na conversão de cotações em relação a formulários tradicionais",
+      ],
+    },
+    image: "/images/work-vertice.webp",
+    demoUrl: "/demo/materiais-construcao",
+    nextSlug: "aethel-architecture",
+    nextTitle: "Aethel Architecture Studio",
+    seoTitle: "Vértice Materiais & Acabamentos — Estudo de Caso & Demonstração | Fluorite Labs",
+    seoDescription:
+      "Catálogo de alta velocidade para materiais de construção com suporte a 30.000 SKUs, busca instantânea e cotação direta para WhatsApp.",
   },
 };

@@ -14,6 +14,7 @@ export default [
   route("journal", "routes/journal._index.tsx"),
   route("journal/:slug", "routes/journal.$slug.tsx"),
   route("privacidade", "routes/privacy.tsx"),
+  route("demo/materiais-construcao", "routes/demo.materiais.tsx"),
   route("sitemap.xml", "routes/sitemap[.]xml.ts"),
   route("robots.txt", "routes/robots[.]txt.ts"),
 ] satisfies RouteConfig;

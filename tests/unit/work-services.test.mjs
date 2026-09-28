@@ -68,12 +68,17 @@ console.log("Running Marco M4 — Conteúdo Comercial e Prova (PUB-009, WORK-001
 // 2. WORK-001 to WORK-004: Three Conceptual Case Studies
 // ============================================================================
 {
-  console.log("2. Validating Three Conceptual Work Cases (WORK-001 to WORK-004)...");
+  console.log("2. Validating Conceptual Work Cases (WORK-001 to WORK-004)...");
 
-  const requiredCases = ["aethel-architecture", "lumena-health", "vektor-robotics"];
+  const requiredCases = [
+    "aethel-architecture",
+    "lumena-health",
+    "vektor-robotics",
+    "vertice-materiais",
+  ];
 
   const cases = Object.values(CANONICAL_WORK_CASES);
-  assert.equal(cases.length, 3, "Must define exactly 3 conceptual projects");
+  assert.ok(cases.length >= 4, "Must define at least 4 conceptual projects");
 
   for (const slug of requiredCases) {
     const caseItem = CANONICAL_WORK_CASES[slug];
@@ -108,7 +113,7 @@ console.log("Running Marco M4 — Conteúdo Comercial e Prova (PUB-009, WORK-001
   }
 
   console.log(
-    "   ✓ All 3 conceptual projects conform strictly to WORK-001 - WORK-004 requirements.",
+    "   ✓ All 4 conceptual projects conform strictly to WORK-001 - WORK-004 requirements.",
   );
 }
 
@@ -121,16 +126,19 @@ console.log("Running Marco M4 — Conteúdo Comercial e Prova (PUB-009, WORK-001
   const aethel = CANONICAL_WORK_CASES["aethel-architecture"];
   const lumena = CANONICAL_WORK_CASES["lumena-health"];
   const vektor = CANONICAL_WORK_CASES["vektor-robotics"];
+  const vertice = CANONICAL_WORK_CASES["vertice-materiais"];
 
-  // Chain: Aethel -> Lumena -> Vektor -> Aethel (circular loop)
+  // Chain: Aethel -> Lumena -> Vektor -> Vertice -> Aethel (circular loop)
   assert.equal(aethel.nextSlug, "lumena-health", "Aethel must point to Lumena");
   assert.equal(lumena.nextSlug, "vektor-robotics", "Lumena must point to Vektor");
-  assert.equal(vektor.nextSlug, "aethel-architecture", "Vektor must point back to Aethel");
+  assert.equal(vektor.nextSlug, "vertice-materiais", "Vektor must point to Vertice");
+  assert.equal(vertice.nextSlug, "aethel-architecture", "Vertice must point back to Aethel");
 
   // Titles must match target case
   assert.equal(aethel.nextTitle, lumena.title);
   assert.equal(lumena.nextTitle, vektor.title);
-  assert.equal(vektor.nextTitle, aethel.title);
+  assert.equal(vektor.nextTitle, vertice.title);
+  assert.equal(vertice.nextTitle, aethel.title);
 
   console.log("   ✓ Continuous circular navigation verified (WORK-005).");
 }
