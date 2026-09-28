@@ -14,7 +14,7 @@ export function meta(_args?: Route.MetaArgs) {
 }
 
 export default function Home() {
-  const [lang, setLang] = useState<"pt" | "en">("en");
+  const [lang, setLang] = useState<"pt" | "en">("pt");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(
     typeof window !== "undefined" &&
       new URLSearchParams(window.location.search).get("menu") === "true",
@@ -24,6 +24,27 @@ export default function Home() {
       (new URLSearchParams(window.location.search).get("briefing") === "true" ||
         window.location.hash === "#briefing"),
   );
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("fluorite_lang");
+      if (saved === "pt" || saved === "en") {
+        setLang(saved);
+      }
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  const handleToggleLang = () => {
+    const nextLang = lang === "pt" ? "en" : "pt";
+    setLang(nextLang);
+    try {
+      localStorage.setItem("fluorite_lang", nextLang);
+    } catch {
+      // ignore
+    }
+  };
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -589,8 +610,8 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <button
                 type="button"
-                onClick={() => setLang(lang === "en" ? "pt" : "en")}
-                className="px-2.5 py-1 text-[11px] font-mono tracking-wider text-muted-silver hover:text-soft-white border border-white/10 hover:border-white/20 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crystal-lilac/70"
+                onClick={handleToggleLang}
+                className="px-2.5 py-1 text-[11px] font-mono tracking-wider text-muted-silver hover:text-soft-white border border-white/10 hover:border-white/20 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crystal-lilac/70 cursor-pointer"
                 title="Alternar idioma / Switch language"
               >
                 {lang.toUpperCase()}
@@ -681,8 +702,8 @@ export default function Home() {
                   <span>IDIOMA</span>
                   <button
                     type="button"
-                    onClick={() => setLang(lang === "en" ? "pt" : "en")}
-                    className="px-3 py-1 font-mono rounded-full border border-white/20 text-white"
+                    onClick={handleToggleLang}
+                    className="px-3 py-1 font-mono rounded-full border border-white/20 text-white cursor-pointer"
                   >
                     {lang.toUpperCase()}
                   </button>
