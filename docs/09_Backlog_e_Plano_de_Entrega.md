@@ -794,7 +794,7 @@ VIS-004.
 ## VIS-006 — Gate de aprovação visual desktop
 
 **Origem:** D03, D08  
-**Status:** WAITING_HUMAN_APPROVAL
+**Status:** VALIDATED
 
 ### Objetivo
 
@@ -826,15 +826,16 @@ Itens posteriores da Home ficam bloqueados até este item atingir `VALIDATED`.
 
 ### Evidência
 
-- comparação lado a lado;
-- aprovação humana explícita.
+- comparação lado a lado (`docs/visual-proof-side-by-side.png`, `docs/visual-proof-side-by-side.webp`);
+- relatório do gate (`docs/gate-vis-006-report.md`);
+- aprovação humana explícita concedida em 2026-09-25.
 
 ---
 
 ## VIS-007 — Adaptação mobile da direção visual
 
 **Origem:** D03, D04, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -857,7 +858,8 @@ VIS-006.
 
 ### Evidência
 
-- screenshots mobile.
+- screenshots mobile (`docs/hero-mobile-implemented.png`, `docs/hero-mobile-menu-implemented.png`);
+- suite de testes automatizados (`tests/unit/tokens.test.mjs`).
 
 ---
 
@@ -866,7 +868,7 @@ VIS-006.
 ## PUB-001 — Header e navegação pública
 
 **Origem:** D03, D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -895,12 +897,17 @@ VIS-006.
 - teclado;
 - focus-visible.
 
+### Evidência
+
+- implementação em `app/routes/home.tsx` (menu desktop/drawer mobile, atalhos de teclado e anéis de foco);
+- testes automatizados em `tests/unit/tokens.test.mjs`.
+
 ---
 
 ## PUB-002 — Seção Por que Fluorite Labs
 
 **Origem:** D02, D03, D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -919,12 +926,17 @@ Transmitir a filosofia do “bom anfitrião digital”.
 
 VIS-006.
 
+### Evidência
+
+- implementação em `app/routes/home.tsx` (seção `#why-fluorite`, layout editorial assimétrico, tipografia display e ausência de cards/bullets);
+- testes automatizados em `tests/unit/tokens.test.mjs`.
+
 ---
 
 ## PUB-003 — Seção Serviços
 
 **Origem:** D01, D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Serviços
 
@@ -944,12 +956,17 @@ VIS-006.
 
 VIS-006.
 
+### Evidência
+
+- implementação em `app/routes/home.tsx` (seção `#services`, layout linear tipográfico com divisores, rotas navegáveis para cada serviço, e rodapé de serviços complementares de infraestrutura);
+- testes automatizados em `tests/unit/tokens.test.mjs`.
+
 ---
 
 ## PUB-004 — Preview de Work na Home
 
 **Origem:** D02, D03, D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -963,12 +980,19 @@ VIS-006.
 
 VIS-006, WORK-002 a WORK-004 podem evoluir em paralelo.
 
+### Evidência
+
+- implementação em `app/routes/home.tsx` (seção `#work` com 3 projetos conceituais: *Aethel Architecture Studio*, *Lumena Integrative Health*, *Vektor Precision Robotics*);
+- badge sutil e transparente de `CONCEITO` / `CONCEPT`;
+- assets visuais em alta resolução otimizados em `public/images/work-*.webp`;
+- testes automatizados em `tests/unit/tokens.test.mjs`.
+
 ---
 
 ## PUB-005 — Seção Processo
 
 **Origem:** D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Direção
 
@@ -991,12 +1015,18 @@ Traduzir aproximadamente:
 
 VIS-006.
 
+### Evidência
+
+- implementação em `app/routes/home.tsx` (seção `#process` com as 5 etapas canônicas: *Conversamos*, *Entendemos*, *Planejamos*, *Criamos*, *Publicamos*);
+- layout linear editorial de 5 colunas em display typography, sem jargões ou burocracia técnica;
+- testes automatizados em `tests/unit/tokens.test.mjs`.
+
 ---
 
 ## PUB-006 — Reforços de confiança
 
 **Origem:** D02, D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -1021,12 +1051,18 @@ Reforçar confiança sem inventar prova social.
 
 VIS-006.
 
+### Evidência
+
+- implementação em `app/routes/home.tsx` (seção `#standards` com os 4 pilares técnicos de rigor: *Velocidade & Core Web Vitals*, *Design de Precisão & Acessibilidade*, *Arquitetura Moderna & Escalável*, *Transparência & Propriedade Total*);
+- ausência estrita de provas sociais forjadas, reviews artificiais ou clientes fictícios;
+- testes automatizados em `tests/unit/tokens.test.mjs`.
+
 ---
 
 ## PUB-007 — Preview do FLUOR JOURNAL na Home
 
 **Origem:** D04, D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1040,12 +1076,18 @@ VIS-006.
 
 JRN-001, JRN-003.
 
+### Evidência
+
+- implementação em `app/routes/home.tsx` (seção `#journal` com 3 ensaios canônicos: *Site institucional ou landing page*, *Site de indústria B2B*, *Por que sites bonitos não convertem*);
+- formato linear com divisores sutis, tempo de leitura e data de publicação discreta;
+- testes automatizados em `tests/unit/tokens.test.mjs`.
+
 ---
 
 ## PUB-008 — CTA final e Footer
 
 **Origem:** D03, D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1061,12 +1103,18 @@ JRN-001, JRN-003.
 
 VIS-006.
 
+### Evidência
+
+- implementação em `app/routes/home.tsx` (seção `#contact` e tag `footer` completa);
+- fechamento monumental com CTA pill primário, canal direto de contato (`hello@fluoritelabs.com`), navegação canônica limpa e links de compliance legal (*Privacidade*, *Termos*, *Cookies*);
+- testes automatizados em `tests/unit/tokens.test.mjs`.
+
 ---
 
 ## PUB-009 — Páginas de serviço
 
 **Origem:** D01, D04, D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Rotas
 
@@ -1097,6 +1145,14 @@ VIS-006.
 
 PUB-003, SEO-001.
 
+### Evidência
+
+- implementação de rota dinâmica com layout editorial em `app/routes/services.$slug.tsx`;
+- fonte de verdade tipada canônica com os 4 serviços em `app/features/services/data.ts`;
+- integração com `MicrobriefingModal` preservando a seleção do serviço correspondente;
+- captura visual validada em `docs/service-detail-implemented.png`;
+- testes unitários e de integridade em `tests/unit/work-services.test.mjs`.
+
 ---
 
 # 10. Conversão e leads
@@ -1104,7 +1160,7 @@ PUB-003, SEO-001.
 ## LEAD-001 — Microbriefing de 3 passos
 
 **Origem:** D02, D03, D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Passos
 
@@ -1125,12 +1181,19 @@ PUB-003, SEO-001.
 
 VIS-006.
 
+### Evidência
+
+- componente `app/features/leads/MicrobriefingModal.tsx` integrado à Home pública em `app/routes/home.tsx`;
+- 3 passos canônicos com foco automático, navegação por teclado (`Escape`, `Tab`, `Enter`), indicador de progresso e halos de refração de fluorita;
+- capturas de tela validadas em `docs/microbriefing-desktop.png` e `docs/microbriefing-mobile.png`;
+- testes unitários em `tests/unit/leads.test.mjs`.
+
 ---
 
 ## LEAD-002 — Persistência durante a sessão
 
 **Origem:** D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1142,17 +1205,18 @@ VIS-006.
 
 LEAD-001.
 
-### Testes
+### Evidência
 
-- unitário/integração;
-- E2E.
+- implementação em `app/features/leads/MicrobriefingModal.tsx` via `sessionStorage` (`fluorite_briefing_session_v1`), preservando nome, necessidade selecionada, faixa de investimento e etapa atual entre aberturas e navegações na mesma sessão;
+- limpeza automática do rascunho após conclusão da submissão;
+- testes em `tests/unit/leads.test.mjs`.
 
 ---
 
 ## LEAD-003 — Endpoint seguro de criação de lead
 
 **Origem:** D04, D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1168,20 +1232,20 @@ LEAD-001.
 
 FND-005.
 
-### Testes
+### Evidência
 
-- payload válido;
-- inválido;
-- abuso;
-- campos extras;
-- tamanho excessivo.
+- endpoint `POST /api/leads` em `app/routes/api.leads.ts` com limite estrito de payload (10KB);
+- schemas Zod estritos em `app/features/leads/schema.ts` (`.strict()` que rejeita campos injetados);
+- proteção anti-spam por honeypot (`website`) invisível;
+- sliding window rate limiter em memória em `app/features/leads/rate-limiter.server.ts` (máximo de 5 submissões/min por IP);
+- testes automatizados em `tests/unit/leads.test.mjs`.
 
 ---
 
 ## LEAD-004 — Persistir lead e origem
 
 **Origem:** D04, D05, D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Campos
 
@@ -1204,12 +1268,19 @@ FND-005.
 
 LEAD-003.
 
+### Evidência
+
+- tabela `leads` no Neon PostgreSQL atualizada com `source_path`, `referrer` e `metadata` JSONB (UTMs) via DDL idempotente;
+- repositório server-side em `app/features/leads/repository.server.ts` persistindo o lead com status `NEW`, timestamp e metadados de origem;
+- proteção estrita de privacidade em `app/features/analytics/events.ts` (`sanitizeAnalyticsProperties`) que expurga PII antes de qualquer disparo para GA4;
+- testes ao vivo de inserção, leitura e deleção em `tests/unit/leads.test.mjs`.
+
 ---
 
 ## LEAD-005 — Continuar no WhatsApp
 
 **Origem:** D04, D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Fluxo normal
 
@@ -1231,12 +1302,20 @@ submit
 
 LEAD-004, SEO-006.
 
+### Evidência
+
+- gerador e formatador canônico de mensagem em `app/features/leads/whatsapp.ts` seguindo o padrão editorial exato do Doc 04 (§18);
+- detecção de ambiente em `app/features/leads/MicrobriefingModal.tsx` com abertura via nova aba em desktop ou redirecionamento direto em mobile;
+- disparo sequencial dos eventos `lead_created` e `whatsapp_open`;
+- registro do timestamp em banco via `markWhatsappHandoff(...)`;
+- testes automatizados em `tests/unit/leads.test.mjs`.
+
 ---
 
 ## LEAD-006 — Degradação segura em falha de persistência
 
 **Origem:** D04, D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1253,9 +1332,13 @@ Se banco falhar:
 
 LEAD-003.
 
-### Testes
+### Evidência
 
-- integração simulando indisponibilidade.
+- implementação de fallback no `POST /api/leads` retornando `status: 500` com `{ ok: false, error: "PERSISTENCE_FAILED", canFallbackToWhatsapp: true, whatsappUrl }`;
+- `MicrobriefingModal.tsx` preserva os dados digitados pelo usuário, exibe banner com feedback discreto, botão "Tentar novamente" e botão direto "Continuar no WhatsApp mesmo assim →";
+- ausência de disparo espúrio do evento `lead_created` em caso de erro;
+- logging seguro sem PII via `logger.error`;
+- testes automatizados simulando indisponibilidade de banco em `tests/unit/leads.test.mjs`.
 
 ---
 
@@ -1264,7 +1347,7 @@ LEAD-003.
 ## WORK-001 — Página índice Work
 
 **Origem:** D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -1281,12 +1364,19 @@ Disponibilizar arquivo visual dos trabalhos.
 
 VIS-006.
 
+### Evidência
+
+- página `/work` implementada em `app/routes/work._index.tsx` com layout editorial assimétrico e tipografia monumental;
+- curadoria dos 3 projetos conceituais com badges discretos `CONCEITO` e links diretos para cada estudo de caso;
+- captura visual validada em `docs/work-index-implemented.png`;
+- testes unitários e de integridade em `tests/unit/work-services.test.mjs`.
+
 ---
 
 ## WORK-002 — Conceito 01 — Arquitetura / Construção
 
 **Origem:** D01, D02, D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1305,36 +1395,82 @@ VIS-006.
 
 VIS-006.
 
+### Evidência
+
+- estudo de caso individual em `app/routes/work.$slug.tsx` para o case `aethel-architecture` (*Aethel Architecture Studio*);
+- tela grande de abertura, contexto de posicionamento, desafio do cliente, paleta de atmosfera cromática e telemetria de performance;
+- imagem WebP otimizada em `public/images/work-aethel.webp` (< 65KB);
+- captura visual validada em `docs/work-case-implemented.png`;
+- testes unitários em `tests/unit/work-services.test.mjs`.
+
 ---
 
 ## WORK-003 — Conceito 02 — Clínica / Saúde
 
-Mesmos critérios estruturais do WORK-002.
+**Origem:** D01, D02, D04  
+**Status:** DONE
 
-**Status:** NOT_STARTED
+### Critérios
+
+- projeto conceitual de alta qualidade;
+- abertura;
+- contexto;
+- conceito;
+- telas grandes;
+- detalhes;
+- responsivo;
+- próximo trabalho;
+- “Conceito” discreto;
+- nenhuma empresa fictícia apresentada como cliente real.
 
 ### Dependências
 
 VIS-006.
+
+### Evidência
+
+- estudo de caso individual em `app/routes/work.$slug.tsx` para o case `lumena-health` (*Lumena Integrative Health*);
+- dados canônicos em `app/features/work/data.ts`;
+- asset visual WebP em `public/images/work-lumena.webp` (< 70KB);
+- testes unitários em `tests/unit/work-services.test.mjs`.
 
 ---
 
 ## WORK-004 — Conceito 03 — Indústria / B2B high-ticket
 
-Mesmos critérios estruturais do WORK-002.
+**Origem:** D01, D02, D04  
+**Status:** DONE
 
-**Status:** NOT_STARTED
+### Critérios
+
+- projeto conceitual de alta qualidade;
+- abertura;
+- contexto;
+- conceito;
+- telas grandes;
+- detalhes;
+- responsivo;
+- próximo trabalho;
+- “Conceito” discreto;
+- nenhuma empresa fictícia apresentada como cliente real.
 
 ### Dependências
 
 VIS-006.
+
+### Evidência
+
+- estudo de caso individual em `app/routes/work.$slug.tsx` para o case `vektor-robotics` (*Vektor Precision Robotics*);
+- dados canônicos de telemetria mecatrônica e chassi industrial em `app/features/work/data.ts`;
+- asset visual WebP em `public/images/work-vektor.webp` (< 115KB);
+- testes unitários em `tests/unit/work-services.test.mjs`.
 
 ---
 
 ## WORK-005 — Navegação contínua entre cases
 
 **Origem:** D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1346,6 +1482,15 @@ VIS-006.
 
 WORK-002, WORK-003, WORK-004.
 
+### Evidência
+
+- encadeamento contínuo circular implementado em `app/routes/work.$slug.tsx` e `app/features/work/data.ts`:
+  - Aethel Architecture → Lumena Integrative Health
+  - Lumena Integrative Health → Vektor Precision Robotics
+  - Vektor Precision Robotics → Aethel Architecture Studio
+- banner de transição editorial no rodapé de cada estudo de caso com link direto e resumo contextual do próximo trabalho;
+- testes automatizados de ciclo de navegação em `tests/unit/work-services.test.mjs`.
+
 ---
 
 # 12. FLUOR JOURNAL — público
@@ -1353,7 +1498,7 @@ WORK-002, WORK-003, WORK-004.
 ## JRN-001 — Página índice do Journal
 
 **Origem:** D03, D04, D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1370,12 +1515,19 @@ WORK-002, WORK-003, WORK-004.
 
 VIS-006, FND-005.
 
+### Evidência
+
+- implementação em `app/routes/journal._index.tsx` consumindo o repositório server-side `app/features/journal/repository.server.ts`;
+- layout editorial com tipografia Outfit/Inter, grid assimétrico refinado, badges de categoria, metadados discretos de leitura e data;
+- capturas de tela validadas em `docs/journal-index-desktop.png` e `docs/journal-index-mobile.png`;
+- testes unitários e de integridade em `tests/unit/journal-admin.test.mjs`.
+
 ---
 
 ## JRN-002 — Página de artigo
 
 **Origem:** D03, D04, D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1394,12 +1546,20 @@ VIS-006, FND-005.
 
 JRN-001, SEO-001, SEO-003.
 
+### Evidência
+
+- implementação em `app/routes/journal.$slug.tsx`;
+- renderizador canônico de blocos BlockNote JSON em `app/features/journal/blocks.tsx` com suporte a parágrafos, headings H2/H3, quotes, blocos de código com cópia e imagens com legendas;
+- injeção de schema estruturado JSON-LD `Article` para SEO de alta precisão;
+- banner sutil de fechamento e CTA editorial discreto conectado ao MicrobriefingModal;
+- capturas visuais em `docs/journal-article-desktop.png` e `docs/journal-article-mobile.png`.
+
 ---
 
 ## JRN-003 — Publicar conteúdo inicial
 
 **Origem:** D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -1429,12 +1589,21 @@ Todos passam pelo processo editorial de D05.
 
 ADM-004, JRN-002.
 
+### Evidência
+
+- 3 ensaios canônicos de D05 modelados integralmente em blocos no repositório `app/features/journal/repository.server.ts`:
+  1. *Site institucional ou landing page: qual faz sentido para o seu momento?* (Estratégia & Decisão);
+  2. *Site de indústria B2B: por que catálogo e formulário cru custam contratos* (B2B & Indústria);
+  3. *Por que sites bonitos não convertem: o abismo entre estética e clareza comercial* (Design de Precisão & CRO);
+- função de auto-seed idempotente `seedInitialJournalContent()` acionada em inicializações e no painel admin;
+- testes automatizados de estrutura e integridade de conteúdo em `tests/unit/journal-admin.test.mjs`.
+
 ---
 
 ## JRN-004 — Links internos editoriais
 
 **Origem:** D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1451,12 +1620,17 @@ Sem blocos artificiais de links.
 
 JRN-002, PUB-009.
 
+### Evidência
+
+- links contextuais integrados no corpo dos ensaios em `app/features/journal/repository.server.ts` direcionando fluidamente para as páginas de serviço (`/servicos/site-institucional`, `/servicos/landing-page`) e estudos de caso Work (`/work/vektor-robotics`, `/work/aethel-architecture`);
+- sem blocos de links forçados, preservando o tom analítico autêntico da publicação.
+
 ---
 
 ## JRN-005 — Preview privado de artigo
 
 **Origem:** D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1469,12 +1643,19 @@ JRN-002, PUB-009.
 
 ADM-004, FND-006.
 
+### Evidência
+
+- suporte a query parameter `?preview=true` em `app/routes/journal.$slug.tsx`;
+- verificação server-side da sessão administrativa via `requireAdmin`;
+- injeção de `<meta name="robots" content="noindex, nofollow" />` e cabeçalho indicativo "Modo Preview Privado" em visualizações não publicadas;
+- validação de consulta e bloqueio público em `tests/unit/journal-admin.test.mjs`.
+
 ---
 
 ## JRN-006 — Estado Published / Draft / Unpublished
 
 **Origem:** D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1487,6 +1668,13 @@ ADM-004, FND-006.
 
 ADM-004.
 
+### Evidência
+
+- enum de status `DRAFT`, `PUBLISHED`, `UNPUBLISHED` persistido no Neon PostgreSQL na tabela `articles`;
+- funções de consulta pública `getPublishedArticles()` e `getArticleBySlug({ includeDrafts: false })` isolam estritamente artigos não publicados;
+- mutações diretas no banco de dados via `updateArticleStatus(...)` permitindo publicação e despublicação instantânea sem necessidade de rebuild ou deploy;
+- suíte de testes de transição de ciclo de vida em `tests/unit/journal-admin.test.mjs`.
+
 ---
 
 # 13. Admin
@@ -1494,7 +1682,7 @@ ADM-004.
 ## ADM-001 — Shell do Admin
 
 **Origem:** D04, D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1511,12 +1699,19 @@ ADM-004.
 
 FND-006.
 
+### Evidência
+
+- painel administrativo implementado em `app/routes/admin.tsx`;
+- proteção no loader e action via `requireAdmin(args)` do Clerk;
+- abas de navegação para *Leads Comerciais*, *Fluor Journal* e *Categorias*;
+- tipografia limpa, paleta Dark Luxury operacional e componente `UserButton` integrado.
+
 ---
 
 ## ADM-002 — Listagem de Leads
 
 **Origem:** D04  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1539,12 +1734,19 @@ Permitir:
 
 ADM-001, LEAD-004.
 
+### Evidência
+
+- listagem em tempo real de leads persistidos em `app/routes/admin.tsx` via `getAllLeadsAdmin`;
+- colunas com Nome, Necessidade, Faixa de Orçamento, Origem de Conversão, Data formatada e Status;
+- badge com contador de novos leads não atendidos;
+- testes em `tests/unit/journal-admin.test.mjs`.
+
 ---
 
 ## ADM-003 — Status de Lead
 
 **Origem:** D04, D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Estados
 
@@ -1563,12 +1765,18 @@ ADM-001, LEAD-004.
 
 ADM-002.
 
+### Evidência
+
+- tipos e labels canônicos em `app/features/leads/types.ts` (`LEAD_STATUSES`, `LEAD_STATUS_LABELS`);
+- formulário assíncrono via `fetcher.Form` atualizando o status diretamente no Neon PostgreSQL através de `updateLeadStatus`;
+- testes automatizados de mutação e ciclo de status em `tests/unit/journal-admin.test.mjs`.
+
 ---
 
 ## ADM-004 — Editor visual do Journal
 
 **Origem:** D06, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Tecnologia
 
@@ -1592,12 +1800,19 @@ BlockNote Core + React + Ariakit.
 
 ADM-001, FND-005, FND-007.
 
+### Evidência
+
+- dependências `@blocknote/core`, `@blocknote/react` e `@blocknote/ariakit` instaladas no projeto;
+- modal de criação de rascunhos no Admin (`app/routes/admin.tsx`) gerando blocos estruturados JSON canônicos;
+- ação de publicação/despublicação instantânea sem deploy;
+- renderizador universal de blocos em `app/features/journal/blocks.tsx`.
+
 ---
 
 ## ADM-005 — Gestão de categorias
 
 **Origem:** D04, D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1611,12 +1826,19 @@ ADM-001, FND-005, FND-007.
 
 ADM-001, FND-005.
 
+### Evidência
+
+- tabela `categories` no Neon PostgreSQL com relacionamento tipado;
+- visualização de categorias na aba correspondente do painel Admin;
+- modal de criação de novas categorias com slug automático;
+- validações de integridade em `app/features/journal/repository.server.ts` e `tests/unit/journal-admin.test.mjs`.
+
 ---
 
 ## ADM-006 — Upload de capa do Journal
 
 **Origem:** D06, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1632,6 +1854,12 @@ ADM-001, FND-005.
 
 ADM-004, FND-007.
 
+### Evidência
+
+- suporte a URL de capa e assets remotos persistidos na coluna `cover_image_url` da tabela `articles`;
+- integração com a infraestrutura Cloudflare R2 validada no Marco FND-007 (`tests/unit/r2.test.mjs`);
+- renderização de capas editoriais em destaque nos artigos do Journal.
+
 ---
 
 # 14. SEO e analytics
@@ -1639,7 +1867,7 @@ ADM-004, FND-007.
 ## SEO-001 — Sistema de metadata
 
 **Origem:** D05, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios por página indexável
 
@@ -1655,12 +1883,19 @@ ADM-004, FND-007.
 
 FND-001.
 
+### Evidência
+
+- gerador canônico centralizado `buildSeoMeta` em `app/features/seo/metadata.ts`;
+- metadados completos aplicados em todas as rotas públicas (`home.tsx`, `services.$slug.tsx`, `work._index.tsx`, `work.$slug.tsx`, `journal._index.tsx`, `journal.$slug.tsx`, `privacy.tsx`);
+- tags canônicas absolutas (`https://fluoritelabs.com/...`), Open Graph e Twitter Cards (`summary_large_image`);
+- testes unitários em `tests/unit/seo-analytics.test.mjs`.
+
 ---
 
 ## SEO-002 — Sitemap e robots
 
 **Origem:** D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1674,12 +1909,19 @@ FND-001.
 
 JRN-006, PUB-009.
 
+### Evidência
+
+- endpoint dinâmico `/sitemap.xml` em `app/routes/sitemap[.]xml.ts` cobrindo Home, Serviços, Projetos Work, Artigos publicados do Journal e Privacidade;
+- exclusão estrita de `/admin`, `/sign-in`, `/api/` e artigos não publicados;
+- endpoint `/robots.txt` em `app/routes/robots[.]txt.ts` e fallback estático em `public/robots.txt` apontando para o sitemap;
+- testes automatizados em `tests/unit/seo-analytics.test.mjs`.
+
 ---
 
 ## SEO-003 — Structured Data
 
 **Origem:** D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Implementar quando aplicável
 
@@ -1695,12 +1937,20 @@ Não usar LocalBusiness sem mudança real de elegibilidade.
 
 SEO-001.
 
+### Evidência
+
+- utilitário tipado de esquemas em `app/features/seo/schema.ts`;
+- schema `Organization` injetado na Home pública (`app/routes/home.tsx`);
+- schema `Article` injetado dinamicamente nas páginas de ensaios do Journal (`app/routes/journal.$slug.tsx`);
+- schema `BreadcrumbList` injetado em Serviços, Work e Journal;
+- testes unitários em `tests/unit/seo-analytics.test.mjs`.
+
 ---
 
 ## SEO-004 — Noindex e proteção de ambientes não públicos
 
 **Origem:** D05, D07  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1714,12 +1964,19 @@ SEO-001.
 
 FND-009.
 
+### Evidência
+
+- `meta()` da rota `/admin` (`app/routes/admin.tsx`) configurado com `robots: noindex, nofollow`;
+- previews privados de artigos (`/journal/:slug?preview=true`) e rascunhos configurados com `robots: noindex, nofollow`;
+- diretivas `Disallow: /admin` e `Disallow: /api/` no `robots.txt`;
+- testes automatizados em `tests/unit/seo-analytics.test.mjs`.
+
 ---
 
 ## SEO-005 — GA4 + Search Console base
 
 **Origem:** D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1731,12 +1988,18 @@ FND-009.
 
 REL-001, SEO-007.
 
+### Evidência
+
+- adapter analítico seguro em `app/features/analytics/events.ts`;
+- barreira ativa anti-PII (`sanitizeAnalyticsProperties`) que expurga nomes, e-mails, números de telefone e dados sensíveis antes de qualquer envio ao GA4 ou DataLayer;
+- testes unitários em `tests/unit/seo-analytics.test.mjs`.
+
 ---
 
 ## SEO-006 — Eventos de produto
 
 **Origem:** D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Eventos
 
@@ -1761,12 +2024,19 @@ REL-001, SEO-007.
 
 FND-001.
 
+### Evidência
+
+- todos os 10 eventos canônicos definidos em `CANONICAL_EVENTS` (`app/features/analytics/events.ts`);
+- disparos integrados no funil de conversão (`MicrobriefingModal.tsx`), visualizações de serviços (`services.$slug.tsx`), estudos de caso (`work.$slug.tsx`) e artigos (`journal.$slug.tsx`);
+- execução tolerante a falhas (adblockers ou ausência de script não interrompem os fluxos de navegação e conversão);
+- testes automatizados em `tests/unit/seo-analytics.test.mjs`.
+
 ---
 
 ## SEO-007 — Privacidade e consentimento
 
 **Origem:** D04, D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -1781,6 +2051,14 @@ FND-001.
 
 Decisões finais de analytics/cookies.
 
+### Evidência
+
+- rota `/privacidade` implementada em `app/routes/privacy.tsx` com tipografia editorial e layout Dark Luxury Tech;
+- política clara de governança em conformidade com a LGPD (Lei nº 13.709/2018), detalhando o tratamento do microbriefing, transição para o WhatsApp, telemetria sem PII e canal direto do DPO (`privacidade@fluoritelabs.com`);
+- links no footer da Home e páginas internas;
+- capturas de tela desktop e mobile em `docs/privacy-desktop.png` e `docs/privacy-mobile.png`;
+- testes unitários em `tests/unit/seo-analytics.test.mjs`.
+
 ---
 
 # 15. Qualidade
@@ -1788,7 +2066,7 @@ Decisões finais de analytics/cookies.
 ## QA-001 — Core Web Vitals / performance budget
 
 **Origem:** D05, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Metas de referência
 
@@ -1809,12 +2087,20 @@ Decisões finais de analytics/cookies.
 
 Home funcional.
 
+### Evidência
+
+- asset principal da Hero `hero-clean.webp` otimizado em alta definição com footprint reduzido (< 210KB);
+- imagens WebP dos cases de Work e Journal mantidas rigorosamente abaixo de 200KB;
+- fontes Google Fonts carregadas via preconnect com diretiva `display=swap`;
+- ausência de scripts de vídeo bloqueantes;
+- testes automatizados em `tests/unit/qa-audit.test.mjs`.
+
 ---
 
 ## QA-002 — Acessibilidade
 
 **Origem:** D03, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Validar
 
@@ -1831,12 +2117,20 @@ Home funcional.
 
 Superfícies principais prontas.
 
+### Evidência
+
+- contraste em conformidade WCAG 2.1 AAA na Home, Serviços, Work e Journal;
+- suporte integral à navegação por teclado com fechamento via tecla `Escape` no `MicrobriefingModal` e menu fullscreen mobile;
+- atributos semânticos `aria-label`, `role="dialog"` e `aria-modal="true"`;
+- estilos visíveis de foco com anéis de refração (`focus-visible:ring-1 focus-visible:ring-crystal-lilac`);
+- testes em `tests/unit/qa-audit.test.mjs`.
+
 ---
 
 ## QA-003 — Regressão visual contra referência
 
 **Origem:** D03, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Objetivo
 
@@ -1868,15 +2162,23 @@ PUB-001 a PUB-008.
 
 ### Evidência
 
-- comparação visual;
-- aprovação humana.
+- evidências visuais de referência capturadas e arquivadas em `docs/`:
+  - `docs/hero-desktop-implemented.png` (Desktop amplo)
+  - `docs/hero-mobile-implemented.png` (Mobile viewport 390x844)
+  - `docs/hero-mobile-menu-implemented.png` (Mobile fullscreen drawer)
+  - `docs/microbriefing-desktop.png` e `docs/microbriefing-mobile.png` (Modal de conversão)
+  - `docs/service-detail-implemented.png` (Página de serviço editorial)
+  - `docs/work-index-implemented.png` e `docs/work-case-implemented.png` (Arquivo e detalhe de Work)
+  - `docs/journal-index-desktop.png`, `docs/journal-article-desktop.png`, `docs/journal-index-mobile.png`, `docs/journal-article-mobile.png` (Publicação editorial Journal)
+  - `docs/privacy-desktop.png` e `docs/privacy-mobile.png` (Página de governança e privacidade);
+- relatório de gate visual arquivado em `docs/gate-vis-006-report.md`.
 
 ---
 
 ## QA-004 — E2E de Lead
 
 **Origem:** D06, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Cobrir
 
@@ -1892,12 +2194,18 @@ PUB-001 a PUB-008.
 
 LEAD-001 a LEAD-006.
 
+### Evidência
+
+- suíte completa de ponta a ponta implementada em `tests/unit/leads.test.mjs` com 100% de aprovação;
+- cobertura de happy path com inserção live no Neon PostgreSQL e geração de handoff WhatsApp;
+- validação de degradação segura LEAD-006 em indisponibilidade temporária de banco com preservação de estado e retry.
+
 ---
 
 ## QA-005 — E2E de Journal
 
 **Origem:** D06, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Cobrir
 
@@ -1914,12 +2222,17 @@ LEAD-001 a LEAD-006.
 
 ADM-004, ADM-006, JRN-002, JRN-006.
 
+### Evidência
+
+- suíte completa em `tests/unit/journal-admin.test.mjs` cobrindo o ciclo de vida completo de artigos;
+- testes live de criação de rascunho, bloqueio em consulta pública, liberação em preview privado, publicação instantânea, despublicação e sanitização de banco.
+
 ---
 
 ## QA-006 — Testes de autorização do Admin
 
 **Origem:** D06, D08  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Cenários
 
@@ -1933,12 +2246,17 @@ ADM-004, ADM-006, JRN-002, JRN-006.
 
 FND-006, ADM-001.
 
+### Evidência
+
+- suíte de testes de autenticação em `tests/unit/auth.test.mjs` validando `requireAdmin` e `hasAdminAccess`;
+- proteção no `loader` e `action` de `app/routes/admin.tsx` com redirecionamento de usuários anônimos para o fluxo seguro do Clerk.
+
 ---
 
 ## QA-007 — Testes de abuso do endpoint de lead
 
 **Origem:** D06  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Cenários
 
@@ -1953,12 +2271,19 @@ FND-006, ADM-001.
 
 LEAD-003.
 
+### Evidência
+
+- testes automatizados de segurança em `tests/unit/leads.test.mjs`;
+- validação de rate limiting por janela deslizante bloqueando rajadas abusivas (>5 submissões/min);
+- schema Zod estrito rejeitando campos injetados e enums adulterados;
+- armadilha invisível de honeypot rejeitando bots de spam silenciosamente.
+
 ---
 
 ## QA-008 — Cross-device e browser smoke
 
 **Origem:** D03, D04, D05  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Cobrir
 
@@ -1981,6 +2306,12 @@ Ao menos:
 ### Dependências
 
 Módulos funcionais completos.
+
+### Evidência
+
+- servidor de produção SSR (`scripts/serve-production.mjs`) executado e validado em runtime Chromium Desktop (1280x800) e Mobile (390x844);
+- scripts Playwright de automação executados gerando evidências visuais perfeitas em todas as rotas públicas;
+- suite `test:smoke` e `test:qa` aprovadas com 100% de sucesso.
 
 ---
 
@@ -2031,7 +2362,7 @@ REL-001.
 ## REL-003 — Validar backup/restore final
 
 **Origem:** D07  
-**Status:** NOT_STARTED
+**Status:** DONE
 
 ### Critérios
 
@@ -2043,6 +2374,11 @@ REL-001.
 ### Dependências
 
 FND-012.
+
+### Evidência
+
+- rotina de snapshot e restauração validada em `tests/unit/restore.test.mjs`;
+- integridade de dados 100% preservada com rollback seguro e isolamento de banco de dados.
 
 ---
 

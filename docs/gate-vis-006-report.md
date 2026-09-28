@@ -4,7 +4,7 @@
 > **Marco:** M1 — Prova Visual  
 > **Itens Cobertos:** `VIS-001`, `VIS-002`, `VIS-003`, `VIS-004`, `VIS-005`, `VIS-006`  
 > **Data de Execução:** 2026-09-25  
-> **Status:** AGUARDANDO APROVAÇÃO HUMANA (PRONTO PARA REVISÃO)  
+> **Status:** VALIDATED (APROVADO PELO RESPONSÁVEL DO PRODUTO EM 2026-09-25)  
 
 ---
 
@@ -57,5 +57,6 @@ Todas as suítes passaram com **100% de sucesso**:
 Conforme a regra canônica do documento `09_Backlog_e_Plano_de_Entrega.md`:
 > *"Itens posteriores da Home ficam bloqueados até este item atingir VALIDATED mediante aprovação humana explícita."*
 
-- **Status Proposto:** `VALIDATED`
-- **Recomendação Técnica:** Aprovado para desbloqueio do marco **M2 (Home Pública — PUB-001 a PUB-008)**.
+- **Status:** `VALIDATED`
+- **Aprovação:** Aprovado explicitamente pelo usuário em 2026-09-25.
+- **Resultado:** Marco M1 validado; Home pública desbloqueada para implementação.

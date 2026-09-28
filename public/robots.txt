@@ -1,0 +1,11 @@
+# Fluorite Labs Robots Configuration (SEO-002, SEO-004)
+User-agent: *
+Allow: /
+
+# Private areas & admin surfaces strictly excluded
+Disallow: /admin
+Disallow: /api/
+Disallow: /sign-in
+Disallow: /sign-up
+
+Sitemap: https://fluoritelabs.com/sitemap.xml

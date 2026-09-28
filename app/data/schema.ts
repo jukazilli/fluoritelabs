@@ -12,6 +12,9 @@ export const leads = pgTable(
     need: text("need").notNull(),
     budget: varchar("budget", { length: 100 }).notNull(),
     status: varchar("status", { length: 50 }).notNull().default("NEW"),
+    sourcePath: varchar("source_path", { length: 500 }),
+    referrer: text("referrer"),
+    metadata: jsonb("metadata"),
     whatsappHandoffAt: timestamp("whatsapp_handoff_at", {
       withTimezone: true,
     }),
@@ -40,6 +43,8 @@ export const articles = pgTable(
     excerpt: text("excerpt"),
     content: jsonb("content").notNull(),
     coverImageUrl: text("cover_image_url"),
+    categoryId: text("category_id"),
+    categoryName: text("category_name"),
     status: varchar("status", { length: 50 }).notNull().default("DRAFT"),
     readingTimeMinutes: integer("reading_time_minutes").default(1),
     publishedAt: timestamp("published_at", { withTimezone: true }),
